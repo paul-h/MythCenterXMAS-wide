@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mythuitheme SYSTEM "http://www.mythtv.org/schema/mythuitheme.dtd">
+
+<!-- theme.xml for the MythCenter theme - by Jeroen Brosens -->
+<mythuitheme>
+    <window name="mainmenu">
+
+        <fontdef name="menufont" face="Liberation Sans">
+            <color>#00ff00</color>
+            <pixelsize>30</pixelsize>
+            <weight>bold</weight>
+            <shadowcolor>#00ff00</shadowcolor>
+            <shadowoffset>2,2</shadowoffset>
+            <shadowalpha>50</shadowalpha>
+        </fontdef>
+
+        <fontdef name="clock" from="small">
+            <pixelsize>28</pixelsize>
+        </fontdef>
+
+        <clock name="clock">
+            <area>780,40,480,40</area>
+            <font>clock</font>
+            <template>%DATE%, %TIME%</template>
+            <align>center</align>
+        </clock>
+
+        <statetype name="titles">
+            <position>24,28</position>
+            <state name="TV">
+                <imagetype name="TV">
+                    <filename>title/title_tv.png</filename>
+                </imagetype>
+            </state>
+            <state name="MAIN">
+                <imagetype name="MAIN">
+                    <filename>title/title_main.png</filename>
+                </imagetype>
+            </state>
+            <state name="MUSIC">
+                <imagetype name="MUSIC">
+                    <filename>title/title_music.png</filename>
+                </imagetype>
+            </state>
+            <state name="GALLERY">
+                <imagetype name="GALLERY">
+                    <filename>title/title_gallery.png</filename>
+                </imagetype>
+            </state>
+            <state name="VIDEO">
+                <imagetype name="VIDEO">
+                    <filename>title/title_video.png</filename>
+                </imagetype>
+            </state>
+            <state name="GAMES">
+                <imagetype name="GAMES">
+                    <filename>title/title_games.png</filename>
+                </imagetype>
+            </state>
+            <state name="WEATHER">
+                <imagetype name="WEATHER">
+                    <filename>title/title_weather.png</filename>
+                </imagetype>
+            </state>
+            <state name="SCHEDULE">
+                <imagetype name="SCHEDULE">
+                    <filename>title/title_schedule.png</filename>
+                </imagetype>
+            </state>
+            <state name="SEARCH">
+                <imagetype name="SEARCH">
+                    <filename>title/title_search.png</filename>
+                </imagetype>
+            </state>
+            <state name="WORDS" from="SEARCH" />
+            <state name="LISTS" from="SEARCH" />
+            <state name="SETUP">
+                <imagetype name="SETUP">
+                    <filename>title/title_setup.png</filename>
+                </imagetype>
+            </state>
+            <state name="TVSETUP" from="TV" />
+            <state name="SETUP_TVRECPRIORITIES">
+                <imagetype name="SETUP_TVRECPRIORITIES">
+                    <filename>title/title_priority.png</filename>
+                </imagetype>
+            </state>
+            <state name="MEDIA_SETUP">
+                <imagetype name="MEDIA_SETUP">
+                    <filename>title/title_multimedia.png</filename>
+                </imagetype>
+            </state>
+            <state name="INFO_SETUP">
+                <imagetype name="INFO_SETUP">
+                    <filename>title/title_info_settings.png</filename>
+                </imagetype>
+            </state>
+            <state name="DVD">
+                <imagetype name="DVD">
+                    <filename>title/title_dvd.png</filename>
+                </imagetype>
+            </state>
+            <state name="DISC_SETTINGS" from="DVD" />
+            <state name="MUSIC_SETTINGS">
+                <imagetype name="MUSIC_SETTINGS">
+                    <filename>title/title_music_setup.png</filename>
+                </imagetype>
+            </state>
+            <state name="VIDEO_SETTINGS" from="VIDEO" />
+            <state name="GAME_SETTINGS" from="GAMES" />
+            <state name="MANAGE_RECORDINGS" from="SCHEDULE" />
+            <state name="LIBRARY">
+                <imagetype name="LIBRARY">
+                    <filename>title/title_multimedia.png</filename>
+                </imagetype>
+            </state>
+            <state name="INFO">
+                <imagetype name="INFO">
+                    <filename>title/title_info_center.png</filename>
+                </imagetype>
+            </state>
+            <state name="OPTICAL_DISK" from="DVD" />
+            <state name="UTIL" from="SETUP" />
+            <state name="NETFLIX" from="DVD" />
+        </statetype>
+
+        <imagetype name="logo">
+            <position>30,594</position>
+            <filename>ui/mythtv_logo.png</filename>
+        </imagetype>
+
+        <imagetype name="horizon">
+            <position>550,450</position>
+            <filename>ui/horizon.png</filename>
+            <alpha>100</alpha>
+        </imagetype>
+
+        <buttonlist name="menu">
+            <area>160,160,650,450</area>
+            <layout>vertical</layout>
+            <spacing>6</spacing>
+            <wrapstyle>selection</wrapstyle>
+            <buttonarea>0,0,550,400</buttonarea>
+            <triggerevent context="Global" action="SELECT">RIGHT</triggerevent>
+            <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
+            <statetype name="buttonitem">
+                <state name="active">
+                    <area>0,0,550,60</area>
+                    <imagetype name="background" />
+                    <textarea name="buttontext">
+                        <area>14,4,530,50</area>
+                        <font>menufont</font>
+                        <align>left,vcenter</align>
+                        <cutdown>yes</cutdown>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active">
+                    <imagetype name="background">
+                        <filename>ui/button_on.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="upscrollarrow">
+                <position>570,4</position>
+                <showempty>yes</showempty>
+                <state type="full">
+                    <shape name="arrowbg">
+                        <area>0,0,46,46</area>
+                        <type>roundbox</type>
+                        <fill color="#000000" alpha="60" />
+                        <line color="#000000" alpha="100" width="1" />
+                        <cornerradius>2</cornerradius>
+                    </shape>
+                    <imagetype name="upon">
+                        <position>7,7</position>
+                        <filename>up_arrow-sel.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>570,347</position>
+                <showempty>yes</showempty>
+                <state type="full">
+                    <shape name="arrowbg">
+                        <area>0,0,46,46</area>
+                        <type>roundbox</type>
+                        <fill color="#000000" alpha="60" />
+                        <line color="#000000" alpha="100" width="1" />
+                        <cornerradius>2</cornerradius>
+                    </shape>
+                    <imagetype name="dnon">
+                        <position>7,7</position>
+                        <filename>down_arrow-sel.png</filename>
+                    </imagetype>
+                </state>
+            </statetype>
+        </buttonlist>
+
+    </window>
+
+</mythuitheme>
