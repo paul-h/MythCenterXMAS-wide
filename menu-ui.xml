@@ -9,9 +9,9 @@
             <color>#00ff00</color>
             <pixelsize>30</pixelsize>
             <weight>bold</weight>
-            <shadowcolor>#00ff00</shadowcolor>
+            <shadowcolor>#000000</shadowcolor>
             <shadowoffset>2,2</shadowoffset>
-            <shadowalpha>50</shadowalpha>
+            <shadowalpha>200</shadowalpha>
         </fontdef>
 
         <fontdef name="clock" from="small">
