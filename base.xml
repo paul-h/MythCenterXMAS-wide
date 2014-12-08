@@ -20,7 +20,7 @@
     <fontdef name="small" from="basesmall">
         <shadowcolor>#000000</shadowcolor>
         <shadowoffset>2,2</shadowoffset>
-        <shadowalpha>0</shadowalpha>
+        <shadowalpha>200</shadowalpha>
     </fontdef>
 
     <fontdef name="basemedium" from="basesmall" face="Liberation Sans">
@@ -1303,11 +1303,16 @@
     </window>
 
     <window name="backgroundwindow">
-
-        <imagetype name="backimg">
+       <imagetype name="background">
             <area>0,0,1280,720</area>
-            <filepattern low="1" high="10">ui/snow-%1.png</filepattern>
-            <delay>150</delay>
+            <filename>backgrounds/</filename>
+            <delay>60000</delay>
+        </imagetype>
+
+        <imagetype name="snow">
+            <area>0,0,1280,720</area>
+            <filename>ui/snow.gif</filename>
+            <delay>200</delay>
         </imagetype>
 
         <fontdef name="medium" face="Droid Sans">
