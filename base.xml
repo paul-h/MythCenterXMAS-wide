@@ -47,8 +47,8 @@
     <fontdef name="baseextralarge" from="baselarge">
         <pixelsize>34</pixelsize>
         <shadowcolor>#000000</shadowcolor>
-        <shadowoffset>4,4</shadowoffset>
-        <shadowalpha>64</shadowalpha>
+        <shadowoffset>2,2</shadowoffset>
+        <shadowalpha>150</shadowalpha>
         <weight>bold</weight>
     </fontdef>
 
