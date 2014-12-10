@@ -52,6 +52,13 @@
         <weight>bold</weight>
     </fontdef>
 
+    <fontdef name="small_label" from="basesmall">
+        <color>#ffff33</color>
+        <shadowcolor>#000000</shadowcolor>
+        <shadowoffset>2,2</shadowoffset>
+        <shadowalpha>200</shadowalpha>
+    </fontdef>
+
     <!-- State variations on small font -->
     <fontdef name="basesmall_normal_selected" from="basesmallbold">
         <color>#ffffff</color>
@@ -121,10 +128,10 @@
         <color>#FFFF33</color>
     </fontdef>
     <fontdef name="basemedium_normal_button" from="basemediumbold">
-        <color>#FFFFFF</color>
+        <color>#00aa00</color>
     </fontdef>
     <fontdef name="basemedium_selected_button" from="basemediumbold">
-        <color>#FFFFFF</color>
+        <color>#00ff00</color>
     </fontdef>
     <fontdef name="basemedium_disabled_button" from="basemediumbold">
         <color>#9999cc</color>
@@ -228,7 +235,8 @@
             <state name="selectedactive" from="active">
                 <shape name="background">
                     <fill style="gradient">
-                        <gradient start="#ff0000" end="#440000" alpha="255" />
+                        <gradient start="#ff0000" end="#440000" alpha="255" /> -->
+                        <!--<gradient start="#55410c" end="#ebca57" alpha="255" /> -->
                     </fill>
                 </shape>
             </state>
@@ -579,7 +587,7 @@
     <!-- Base definition of a textarea -->
     <textarea name="basetextarea">
         <area>0,0,0,0</area>
-        <font>basesmall</font>
+        <font>small_label</font>
         <multiline>no</multiline>
         <align>left</align>
     </textarea>
