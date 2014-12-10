@@ -87,13 +87,12 @@
     </window>
 
     <window name="standbymode">
-        <fontdef name="info" from="small">
-            <color>#ffffff</color>
+        <fontdef name="info" from="small_label">
             <size>16</size>
             <weight>bold</weight>
         </fontdef>
 
-        <fontdef name="warning" from="small">
+        <fontdef name="warning" from="small_label">
             <color>#ff0000</color>
             <size>16</size>
             <shadowcolor>#000000</shadowcolor>
@@ -177,19 +176,19 @@
             <imagetype name="horizon_top">
                 <position>265,170</position>
                 <filename>ui/horizon.png</filename>
-                <alpha>100</alpha>
+                <alpha>250</alpha>
             </imagetype>
 
             <textarea name="currentrecordingheading">
                 <area>20,180,1240,30</area>
-                <font>label</font>
+                <font>small_label</font>
                 <align>allcenter</align>
                 <value>Current Recordings</value>
             </textarea>
 
             <textarea name="nothingrecording" depends="!currentrecording">
                 <area>20,210,1240,50</area>
-                <font>info</font>
+                <font>small</font>
                 <value>There are no recordings currently taking place</value>
                 <align>allcenter</align>
             </textarea>
@@ -203,7 +202,7 @@
                     <area>0,0,100%,26</area>
                     <state name="active">
                         <textarea name="title">
-                            <font>basesmall</font>
+                            <font>small</font>
                             <align>allcenter</align>
                             <area>0,1,1240,24</area>
                             <template>%TITLESUBTITLE% on %CHANNAME% (%SHORTTIMEDATE%)</template>
@@ -217,12 +216,12 @@
             <imagetype name="horizon_middle">
                 <position>265,340</position>
                 <filename>ui/horizon.png</filename>
-                <alpha>100</alpha>
+                <alpha>250</alpha>
             </imagetype>
 
             <textarea name="nextrecordingheading">
                 <area>20,350,1240,30</area>
-                <font>label</font>
+                <font>small_label</font>
                 <align>allcenter</align>
                 <value>Next recordings</value>
             </textarea>
@@ -241,7 +240,7 @@
             <imagetype name="horizon_bottom">
                 <position>265,510</position>
                 <filename>ui/horizon.png</filename>
-                <alpha>100</alpha>
+                <alpha>250</alpha>
             </imagetype>
 
             <!--
