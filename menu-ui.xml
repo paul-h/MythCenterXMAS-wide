@@ -14,7 +14,7 @@
             <shadowalpha>200</shadowalpha>
         </fontdef>
 
-        <fontdef name="clock" from="small">
+        <fontdef name="clock" from="small_label">
             <pixelsize>28</pixelsize>
         </fontdef>
 
