@@ -25,3 +25,10 @@ If you recognise an image and want attribution let me know and I will add it her
 Licensing:
 ----------
 The contents may be freely distributed and changed.
+
+Updates:
+--------
+
+11/12/14 -  1.0  - First public version made available
+?        -  ?.?  - Update the music volume popup
+                   Update the qtlook.txt for the old settings screens
