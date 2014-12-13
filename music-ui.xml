@@ -1041,10 +1041,9 @@
             </section>
         </animation>
 
-        <imagetype name="track_info_background">
-            <filename>miniplayer_background.png</filename>
-            <area>10,10,569,170</area>
-        </imagetype>
+        <shape name="backimg" from="basepopupbackground">
+            <area>0,0,100%,100%</area>
+        </shape>
 
         <imagetype name="mm_blackhole_border">
             <filename>mm_blackhole_border.png</filename>
@@ -1138,8 +1137,18 @@
             </state>
         </statetype>
 
-        <progressbar name="volumeprogress" from="baseprogressbar">
-            <position>60,80</position>
+        <progressbar name="volumeprogress">
+            <area>60,80,500,30</area>
+            <layout>horizontal</layout>
+            <style>reveal</style>
+            <imagetype name="background">
+                <area>0,0,100%,100%</area>
+                <filename>mm_progress-bg.png</filename>
+            </imagetype>
+            <imagetype name="progressimage">
+                <area>0,0,100%,100%</area>
+                <filename>mm_progress-fg.png</filename>
+            </imagetype>
         </progressbar>
 
         <textarea name="volume" from="basetextarea">
