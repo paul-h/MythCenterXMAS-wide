@@ -1113,10 +1113,9 @@
             </section>
         </animation>
 
-        <imagetype name="backimg">
-            <area>0,0,620,165</area>
-            <filename>mythprogressdialog-background.png</filename>
-        </imagetype>
+        <shape name="backimg" from="basepopupbackground">
+            <area>0,0,100%,100%</area>
+        </shape>
 
         <textarea name="message" from="basetextarea">
             <area>20,20,540,60</area>
