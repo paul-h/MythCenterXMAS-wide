@@ -557,8 +557,12 @@
             </statetype>
         </buttonlist>
 
+        <shape name="details_background" from="basebackground">
+            <area>20,455,1240,230</area>
+        </shape>
+
         <textarea name="title" from="basetextarea">
-            <area>30,454,1200,50</area>
+            <area>33,458,1200,50</area>
             <font>baselarge</font>
         </textarea>
 
@@ -567,11 +571,11 @@
         </textarea>
 
         <textarea name="timedate" from="basetextarea">
-            <area>410,490,520,30</area>
+            <area>410,494,520,30</area>
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>30,524,1200,150</area>
+            <area>30,524,1200,155</area>
             <multiline>yes</multiline>
             <cutdown>yes</cutdown>
             <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
@@ -593,7 +597,7 @@
         </textarea>
 
         <textarea name="helptext" from="basetextarea">
-            <area>0,680,1280,30</area>
+            <area>0,685,1280,30</area>
             <value>(1) All  (2) Important</value>
             <align>center</align>
         </textarea>
