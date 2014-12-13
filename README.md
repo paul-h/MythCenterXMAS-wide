@@ -34,3 +34,4 @@ Updates:
                    Update the qtlook.txt for the old settings screens
                    Update the music miniplayer and add a new coverart border image
                    Watch Recordings: animate the group filter and view popups
+                   Scheduled Recordings: add a background to the details, tweak the layout
