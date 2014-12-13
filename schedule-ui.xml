@@ -621,7 +621,7 @@
             <statetype name="buttonitem">
                 <state name="active">
                     <imagetype name="icon">
-                        <area>4,0,26,26</area>
+                        <area>2,0,30,30</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <statetype name="status">
@@ -645,8 +645,8 @@
                     <shape name="selectbar">
                         <area>0,0,1176,30</area>
                         <type>roundbox</type>
-                        <line color="#00FF00" alpha="255" width="1" />
-                        <fill color="#43b038" alpha="128" />
+                        <line color="#ff0000" alpha="255" width="1" />
+                        <fill color="#ff0000" alpha="128" />
                         <cornerradius>4</cornerradius>
                     </shape>
                 </state>
@@ -659,6 +659,10 @@
                 <position>1190,350</position>
             </statetype>
         </buttonlist>
+
+        <shape name="details_background" from="basebackground">
+            <area>20,450,1240,200</area>
+        </shape>
 
         <imagetype name="icon">
             <area>330,474,200,150</area>
