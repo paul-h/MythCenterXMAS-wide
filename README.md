@@ -32,3 +32,5 @@ Updates:
 11/12/14 -  1.0  - First public version made available
 ?        -  ?.?  - Update the music volume popup
                    Update the qtlook.txt for the old settings screens
+                   Update the music miniplayer and add a new coverart border image
+                   Watch Recordings: animate the group filter and view popups
