@@ -1568,6 +1568,10 @@
 
     <window name="customedit">
 
+        <shape name="list_background" from="basebackground">
+            <area>20,60,1240,640</area>
+        </shape>
+
         <textarea name="pagetitle" from="basetextarea">
             <area>15,5,760,40</area>
             <font>baselarge</font>
@@ -1627,22 +1631,22 @@
         </textedit>
 
         <button name="test" from="basebutton">
-            <position>100,650</position>
+            <position>100,640</position>
             <value>Test</value>
         </button>
 
         <button name="record" from="basebutton">
-            <position>386,650</position>
+            <position>386,640</position>
             <value>Record</value>
         </button>
 
         <button name="store" from="basebutton">
-            <position>674,650</position>
+            <position>674,640</position>
             <value>Store</value>
         </button>
 
         <button name="cancel" from="basebutton">
-            <position>960,650</position>
+            <position>960,640</position>
             <value>Cancel</value>
         </button>
 
