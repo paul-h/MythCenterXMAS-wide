@@ -36,3 +36,4 @@ Updates:
                    Watch Recordings: animate the group filter and view popups
                    Scheduled Recordings: add a background to the details, tweak the layout
                    Channel Recording Priority: add a background to the details, tweak the layout
+                   Prog Lister: Add a background to the details, tweak the layout
