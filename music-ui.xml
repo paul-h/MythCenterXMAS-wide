@@ -402,10 +402,20 @@
     <!-- This screen allows you to rip tracks from cd's -->
     <window name="cdripper">
 
+        <textarea name="title" from="basetextarea">
+            <area>15,5,800,50</area>
+            <font>baselarge</font>
+            <value>CD Ripper</value>
+        </textarea>
+
+        <shape name="background" from="basebackground">
+            <area>20,40,1240,660</area>
+        </shape>
+
         <!-- Labels -->
 
         <group name="topgroup" >
-            <area>80,20,930,280</area>
+            <area>80,45,930,280</area>
 
             <textarea name="quality_label">
                 <area>0,0,270,50</area>
@@ -577,12 +587,12 @@
         <!-- Buttons -->
 
         <button name="scan" from="basebutton">
-            <position>480,650</position>
+            <position>480,645</position>
             <value>Scan CD</value>
         </button>
 
         <button name="rip" from="basebutton">
-            <position>650,650</position>
+            <position>650,645</position>
             <value>Rip CD</value>
         </button>
     </window>
