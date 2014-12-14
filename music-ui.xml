@@ -2190,12 +2190,8 @@
             </section>
         </animation>
 
-        <shape name="background" from="basebackground">
-            <area>0,0,1178,674</area>
-            <type>roundbox</type>
-            <fill color="#303030" alpha="255" />
-            <line color="#FFFFFF" alpha="255" width="2" />
-            <cornerradius>12</cornerradius>
+        <shape name="background" from="basepopupbackground">
+            <area>0,0,100%,100%</area>
         </shape>
 
         <imagetype name="coverart">
