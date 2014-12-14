@@ -42,4 +42,3 @@ Updates:
                    cdripper: add a title and background and tweak the layout
                    import_music: add a background and tweak the layout
                    trackdetail_popup: use the proper background
-

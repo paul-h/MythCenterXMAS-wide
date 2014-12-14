@@ -667,6 +667,10 @@
 
     <window name="import_music">
 
+        <shape name="background" from="basebackground">
+            <area>20,40,1240,660</area>
+        </shape>
+
         <shape name="bgimage1">
             <area>435,190,575,35</area>
             <type>roundbox</type>
@@ -719,8 +723,9 @@
         <!-- Labels -->
 
         <textarea name="location_label" from="basetextarea">
-            <area>255,55,170,30</area>
+            <area>255,65,170,30</area>
             <value>Location:</value>
+            <font>small_label</font>
         </textarea>
 
         <textarea name="filename_label" from="location_label">
@@ -781,15 +786,15 @@
         <!-- data fields -->
 
         <textedit name="location" from="basetextedit">
-            <position>435,45</position>
+            <position>435,55</position>
         </textedit>
 
         <button name="directoryfinder" from="basesearchbutton">
-            <position>830,55</position>
+            <position>830,65</position>
         </button>
 
         <button name="scan" from="basebutton">
-            <position>435,110</position>
+            <position>435,120</position>
             <value>Search</value>
         </button>
 
@@ -801,6 +806,7 @@
         <textarea name="filename" from="basetextarea">
             <area>440,195,565,30</area>
             <cutdown>left</cutdown>
+            <font>basesmall</font>
         </textarea>
 
         <checkbox name="compilation" from="basecheckbox">
@@ -809,29 +815,30 @@
 
         <textarea name="compartist" from="basetextarea">
             <area>440,275,565,30</area>
+            <font>basesmall</font>
         </textarea>
 
-        <textarea name="artist" from="basetextarea">
+        <textarea name="artist" from="compartist">
             <area>440,315,565,30</area>
         </textarea>
 
-        <textarea name="album" from="basetextarea">
+        <textarea name="album" from="compartist">
             <area>440,355,565,30</area>
         </textarea>
 
-        <textarea name="title" from="basetextarea">
+        <textarea name="title" from="compartist">
             <area>440,395,565,30</area>
         </textarea>
 
-        <textarea name="genre" from="basetextarea">
+        <textarea name="genre" from="compartist">
             <area>440,435,565,30</area>
         </textarea>
 
-        <textarea name="year" from="basetextarea">
+        <textarea name="year" from="compartist">
             <area>440,475,165,30</area>
         </textarea>
 
-        <textarea name="track" from="basetextarea">
+        <textarea name="track" from="compartist">
             <area>790,475,165,30</area>
         </textarea>
 
