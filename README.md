@@ -38,3 +38,4 @@ Updates:
                    Channel Recording Priority: add a background to the details, tweak the layout
                    Prog Lister: Add a background to the details, tweak the layout
                    Custom Record Rules: Add a background and tweak the layout
+                   basegallerybuttonlist: add the missing 'cd' state
