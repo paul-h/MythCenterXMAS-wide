@@ -30,7 +30,7 @@ Updates:
 --------
 
 11/12/14 -  1.0  - First public version made available
-?        -  ?.?  - Update the music volume popup
+14/12/14 -  1.1  - Update the music volume popup
                    Update the qtlook.txt for the old settings screens
                    Update the music miniplayer and add a new coverart border image
                    Watch Recordings: animate the group filter and view popups
@@ -43,3 +43,4 @@ Updates:
                    import_music: add a background and tweak the layout
                    trackdetail_popup: use the proper background
                    bookmarkmanager:  fix the title and backgrounds
+??/??/?? -  1.2  - Remove the horizon image from the main menu
