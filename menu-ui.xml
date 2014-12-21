@@ -129,12 +129,6 @@
             <filename>ui/mythtv_logo.png</filename>
         </imagetype>
 
-        <imagetype name="horizon">
-            <position>550,450</position>
-            <filename>ui/horizon.png</filename>
-            <alpha>100</alpha>
-        </imagetype>
-
         <buttonlist name="menu">
             <area>160,160,650,450</area>
             <layout>vertical</layout>
