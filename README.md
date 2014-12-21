@@ -20,7 +20,7 @@ The backgrounds where found over a long period of time so have forgot where
 most of them came from but I believe all are free to use for non commercial use.
 
 If you recognise an image and want attribution let me know and I will add it here.
-
+Some backgrounds from http://www.jehtoday.net/christmas/snowfall/
 
 Licensing:
 ----------
@@ -44,3 +44,4 @@ Updates:
                    trackdetail_popup: use the proper background
                    bookmarkmanager:  fix the title and backgrounds
 ??/??/?? -  1.2  - Remove the horizon image from the main menu
+                   Add some new backgrounds
