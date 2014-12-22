@@ -8,18 +8,18 @@
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
-                    <filename>prev_button_off.png</filename>
+                    <filename>music/prev_button_off.png</filename>
                 </imagetype>
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
-                    <filename>prev_button_on.png</filename>
+                    <filename>music/prev_button_on.png</filename>
                 </imagetype>
             </state>
             <state name="disabled" from="active" />
             <state name="pushed" from="active">
                 <imagetype name="background">
-                    <filename>prev_button_pushed.png</filename>
+                    <filename>music/prev_button_pushed.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -31,18 +31,18 @@
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
-                    <filename>rew_button_off.png</filename>
+                    <filename>music/rew_button_off.png</filename>
                 </imagetype>
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
-                    <filename>rew_button_on.png</filename>
+                    <filename>music/rew_button_on.png</filename>
                 </imagetype>
             </state>
             <state name="disabled" from="active" />
             <state name="pushed" from="active">
                 <imagetype name="background">
-                    <filename>rew_button_pushed.png</filename>
+                    <filename>music/rew_button_pushed.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -54,18 +54,18 @@
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
-                    <filename>pause_button_off.png</filename>
+                    <filename>music/pause_button_off.png</filename>
                 </imagetype>
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
-                    <filename>pause_button_on.png</filename>
+                    <filename>music/pause_button_on.png</filename>
                 </imagetype>
             </state>
             <state name="disabled" from="active" />
             <state name="pushed" from="active">
                 <imagetype name="background">
-                    <filename>pause_button_pushed.png</filename>
+                    <filename>music/pause_button_pushed.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -77,18 +77,18 @@
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
-                    <filename>play_button_off.png</filename>
+                    <filename>music/play_button_off.png</filename>
                 </imagetype>
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
-                    <filename>play_button_on.png</filename>
+                    <filename>music/play_button_on.png</filename>
                 </imagetype>
             </state>
             <state name="disabled" from="active" />
             <state name="pushed" from="active">
                 <imagetype name="background">
-                    <filename>play_button_pushed.png</filename>
+                    <filename>music/play_button_pushed.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -100,18 +100,18 @@
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
-                    <filename>stop_button_off.png</filename>
+                    <filename>music/stop_button_off.png</filename>
                 </imagetype>
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
-                    <filename>stop_button_on.png</filename>
+                    <filename>music/stop_button_on.png</filename>
                 </imagetype>
             </state>
             <state name="disabled" from="active" />
             <state name="pushed" from="active">
                 <imagetype name="background">
-                    <filename>stop_button_pushed.png</filename>
+                    <filename>music/stop_button_pushed.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -123,18 +123,18 @@
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
-                    <filename>ff_button_off.png</filename>
+                    <filename>music/ff_button_off.png</filename>
                 </imagetype>
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
-                    <filename>ff_button_on.png</filename>
+                    <filename>music/ff_button_on.png</filename>
                 </imagetype>
             </state>
             <state name="disabled" from="active" />
             <state name="pushed" from="active">
                 <imagetype name="background">
-                    <filename>ff_button_pushed.png</filename>
+                    <filename>music/ff_button_pushed.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -146,18 +146,18 @@
         <statetype name="buttonstate">
             <state name="active">
                 <imagetype name="background">
-                    <filename>next_button_off.png</filename>
+                    <filename>music/next_button_off.png</filename>
                 </imagetype>
             </state>
             <state name="selected" from="active">
                 <imagetype name="background">
-                    <filename>next_button_on.png</filename>
+                    <filename>music/next_button_on.png</filename>
                 </imagetype>
             </state>
             <state name="disabled" from="active" />
             <state name="pushed" from="active">
                 <imagetype name="background">
-                    <filename>next_button_pushed.png</filename>
+                    <filename>music/next_button_pushed.png</filename>
                 </imagetype>
             </state>
         </statetype>
@@ -721,7 +721,7 @@
         </textarea>
 
         <imagetype name="visualizer_border">
-            <filename>mm_blackhole_border.png</filename>
+            <filename>music/mm_blackhole_border.png</filename>
             <area>1082,19,162,162</area>
         </imagetype>
 
@@ -744,7 +744,7 @@
         </textarea>
 
         <imagetype name="mm_blackhole_border">
-            <filename>mm_blackhole_border.png</filename>
+            <filename>music/mm_blackhole_border.png</filename>
             <area>32,19,162,162</area>
         </imagetype>
 
