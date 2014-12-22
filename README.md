@@ -46,3 +46,6 @@ Updates:
 ??/??/?? -  1.2  - Remove the horizon image from the main menu
                    Add some new backgrounds
                    Add some music controls
+                   Move the base scrollbars and add some base arrow images
+                   Update the buttonlists and spinboxes to use the new arrow images
+                   Add new buttonlist with scrollbars
