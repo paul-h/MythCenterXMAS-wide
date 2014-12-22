@@ -49,3 +49,4 @@ Updates:
                    Move the base scrollbars and add some base arrow images
                    Update the buttonlists and spinboxes to use the new arrow images
                    Add new buttonlist with scrollbars
+                   Add a version of stream-ui.xml
