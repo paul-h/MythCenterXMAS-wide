@@ -45,3 +45,4 @@ Updates:
                    bookmarkmanager:  fix the title and backgrounds
 ??/??/?? -  1.2  - Remove the horizon image from the main menu
                    Add some new backgrounds
+                   Add some music controls
