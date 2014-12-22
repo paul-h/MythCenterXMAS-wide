@@ -188,6 +188,110 @@
         <fill color="#880000" alpha="120" />
     </shape>
 
+    <!-- Base definition of a vertical scrollbar -->
+    <scrollbar name="basevertscrollbar">
+        <area>1114,0,14,970</area>
+        <layout>vertical</layout>
+        <hidedelay>0</hidedelay>
+        <shape name="background">
+            <area>0,0,100%,100%</area>
+            <type>roundbox</type>
+            <line color="#aaaaaa" alpha="255" width="1" />
+            <fill style="gradient">
+                <gradient direction="diagonal">
+                    <stop position="0" color="#999999" alpha="255" />
+                    <stop position="100" color="#999999" alpha="120" />
+                </gradient>
+            </fill>
+            <cornerradius>12</cornerradius>
+        </shape>
+        <shape name="slider">
+            <area>0,0,14,40</area>
+            <type>roundbox</type>
+            <line color="#0895f8" alpha="255" width="1" />
+            <fill style="gradient">
+                <gradient direction="diagonal">
+                    <stop position="0" color="#ff0000" alpha="255" />
+                    <stop position="100" color="#ff0000" alpha="120" />
+                </gradient>
+            </fill>
+            <cornerradius>12</cornerradius>
+        </shape>
+    </scrollbar>
+
+    <!-- Base definition of a horizontal scrollbar -->
+    <scrollbar name="basehorizscrollbar" from="basevertscrollbar">
+        <area>20,1030,1880,14</area>
+        <layout>horizontal</layout>
+        <shape name="slider">
+            <area>0,0,40,14</area>
+        </shape>
+    </scrollbar>
+
+    <!-- Base definition of a buttonlist up scroll arrow -->
+    <statetype name="baseupscrollarrow">
+        <position>10,10</position>
+        <state type="off">
+            <imagetype name="upon">
+                <filename>uparrow.png</filename>
+                <alpha>60</alpha>
+            </imagetype>
+        </state>
+        <state type="full">
+            <imagetype name="upoff">
+                <filename>uparrow.png</filename>
+            </imagetype>
+        </state>
+    </statetype>
+
+    <!-- Base definition of a buttonlist down scroll arrow -->
+    <statetype name="basedownscrollarrow">
+        <position>10,10</position>
+        <state type="off">
+            <imagetype name="dnon">
+                <filename>downarrow.png</filename>
+                <alpha>60</alpha>
+            </imagetype>
+        </state>
+        <state type="full">
+            <imagetype name="dnoff">
+                <filename>downarrow.png</filename>
+            </imagetype>
+        </state>
+    </statetype>
+
+    <!-- Base definition of a spinbox left arrow -->
+    <statetype name="baseleftarrow">
+        <position>10,10</position>
+        <state type="off">
+            <imagetype name="upon">
+                <filename>leftarrow.png</filename>
+                <alpha>60</alpha>
+            </imagetype>
+        </state>
+        <state type="full">
+            <imagetype name="upoff">
+                <filename>leftarrow.png</filename>
+            </imagetype>
+        </state>
+    </statetype>
+
+    <!-- Base definition of a spinbox right arrow -->
+    <statetype name="baserightarrow">
+        <position>10,10</position>
+        <state type="off">
+            <imagetype name="dnon">
+                <filename>rightarrow.png</filename>
+                <alpha>60</alpha>
+            </imagetype>
+        </state>
+        <state type="full">
+            <imagetype name="dnoff">
+                <filename>rightarrow.png</filename>
+            </imagetype>
+        </state>
+    </statetype>
+
     <buttonlist name="basebuttonlist">
         <area>0,0,300,250</area>
         <layout>vertical</layout>
@@ -251,36 +355,15 @@
                 </textarea>
             </state>
         </statetype>
-        <statetype name="upscrollarrow">
+        <statetype name="upscrollarrow" from="baseupscrollarrow">
             <position>10,96%</position>
-            <state type="off">
-                <imagetype name="upon">
-                    <filename>lb-uparrow-reg.png</filename>
-                </imagetype>
-            </state>
-            <state type="full">
-                <imagetype name="upoff">
-                    <filename>lb-uparrow-sel.png</filename>
-                </imagetype>
-            </state>
         </statetype>
-        <statetype name="downscrollarrow">
+        <statetype name="downscrollarrow" from="basedownscrollarrow">
             <position>40,96%</position>
-            <state type="off">
-                <imagetype name="dnon">
-                    <filename>lb-dnarrow-reg.png</filename>
-                </imagetype>
-            </state>
-            <state type="full">
-                <imagetype name="dnoff">
-                    <filename>lb-dnarrow-sel.png</filename>
-                </imagetype>
-            </state>
         </statetype>
     </buttonlist>
 
-
-    <!-- Base definition of a buttonlist in wide configuration -->
+        <!-- Base definition of a buttonlist in wide configuration -->
     <buttonlist name="basebuttonlist2">
         <area>0,0,1240,380</area>
         <layout>vertical</layout>
@@ -340,32 +423,77 @@
                 </textarea>
             </state>
         </statetype>
-        <statetype name="upscrollarrow">
+        <statetype name="upscrollarrow" from="baseupscrollarrow">
             <position>1190,6</position>
-            <state type="off">
-                <imagetype name="upon">
-                    <filename>lb-uparrow-reg.png</filename>
-                </imagetype>
-            </state>
-            <state type="full">
-                <imagetype name="upoff">
-                    <filename>lb-uparrow-sel.png</filename>
-                </imagetype>
-            </state>
         </statetype>
-        <statetype name="downscrollarrow">
+        <statetype name="downscrollarrow" from="basedownscrollarrow">
             <position>1190,320</position>
-            <state type="off">
-                <imagetype name="dnon">
-                    <filename>lb-dnarrow-reg.png</filename>
-                </imagetype>
+        </statetype>
+    </buttonlist>
+
+    <!-- Base definition of a buttonlist with a scrollbar -->
+    <buttonlist name="basebuttonlist3">
+        <area>0,0,1240,380</area>
+        <layout>vertical</layout>
+        <spacing>4</spacing>
+        <wrapstyle>selection</wrapstyle>
+        <buttonarea>0,0,100%,100%</buttonarea>
+        <statetype name="buttonitem">
+            <area>0,0,100%-14,26</area>
+            <state name="active">
+                <textarea name="buttontext">
+                    <area>34,2,1156,24</area>
+                    <font>basesmall_normal</font>
+                    <font state="disabled">basesmall_disabled</font>
+                    <font state="error">basesmall_error</font>
+                    <font state="warning">basesmall_warning</font>
+                    <font state="normal">basesmall_normal</font>
+                    <font state="running">basesmall_running</font>
+                    <align>vcenter</align>
+                </textarea>
             </state>
-            <state type="full">
-                <imagetype name="dnoff">
-                    <filename>lb-dnarrow-sel.png</filename>
-                </imagetype>
+            <state name="selectedactive">
+                <shape name="selectbar">
+                    <area>20,0,100%-14,30</area>
+                    <type>roundbox</type>
+                    <line color="#ff0000" alpha="255" width="1" />
+                    <fill color="#ff0000" alpha="128" />
+                    <cornerradius>4</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <area>34,2,1156,24</area>
+                    <font>base_normal_selected</font>
+                    <font state="disabled">basesmall_disabled_selected</font>
+                    <font state="error">basesmall_error_selected</font>
+                    <font state="warning">basesmall_warning_selected</font>
+                    <font state="normal">basesmall_normal_selected</font>
+                    <font state="running">basesmall_running_selected</font>
+                    <align>vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedinactive" >
+               <shape name="selectbar">
+                    <area>28,0,100%-14,30</area>
+                    <type>roundbox</type>
+                    <line color="#ff0000" alpha="100" width="1" />
+                    <fill color="#dd0000" alpha="50" />
+                    <cornerradius>4</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <area>34,2,1156,24</area>
+                    <font>base_normal_selected</font>
+                    <font state="disabled">basesmall_disabled_selected</font>
+                    <font state="error">basesmall_error_selected</font>
+                    <font state="warning">basesmall_warning_selected</font>
+                    <font state="normal">basesmall_normal_selected</font>
+                    <font state="running">basesmall_running_selected</font>
+                    <align>vcenter</align>
+                </textarea>
             </state>
         </statetype>
+        <scrollbar name="scrollbar" from="basevertscrollbar">
+            <area>100%-14,0,14,100%</area>
+        </scrollbar>
     </buttonlist>
 
     <!-- Base definition of a button -->
@@ -463,31 +591,11 @@
             </state>
             <state name="selectedinactive" from="active" />
         </statetype>
-        <statetype name="downscrollarrow">
+        <statetype name="downscrollarrow" from="baserightarrow">
             <position>100%-14,2</position>
-            <state type="off">
-                <imagetype name="dnon">
-                    <filename>lb-rtarrow-reg.png</filename>
-                </imagetype>
-            </state>
-            <state type="full">
-                <imagetype name="dnoff">
-                    <filename>lb-rtarrow-sel.png</filename>
-                </imagetype>
-            </state>
         </statetype>
-        <statetype name="upscrollarrow">
+        <statetype name="upscrollarrow" from="baseleftarrow">
             <position>100%-14,22</position>
-            <state type="off">
-                <imagetype name="upon">
-                    <filename>lb-ltarrow-reg.png</filename>
-                </imagetype>
-            </state>
-            <state type="full">
-                <imagetype name="upoff">
-                    <filename>lb-ltarrow-sel.png</filename>
-                </imagetype>
-            </state>
         </statetype>
     </spinbox>
 
@@ -538,35 +646,11 @@
                 <shape name="background" from="baseselectedwidgetshape" />
             </state>
         </statetype>
-        <statetype name="downscrollarrow">
+        <statetype name="downscrollarrow" from="baserightarrow">
             <position>100%-14,2</position>
-            <state type="off">
-                <imagetype name="dnon">
-                    <area>0,0,12,18</area>
-                    <filename>lb-rtarrow-reg.png</filename>
-                </imagetype>
-            </state>
-            <state type="full">
-                <imagetype name="dnoff">
-                    <area>0,0,12,18</area>
-                    <filename>lb-rtarrow-sel.png</filename>
-                </imagetype>
-            </state>
         </statetype>
-        <statetype name="upscrollarrow">
+        <statetype name="upscrollarrow" from="baseleftarrow">
             <position>100%-14,22</position>
-            <state type="off">
-                <imagetype name="upon">
-                    <area>0,0,12,18</area>
-                    <filename>lb-ltarrow-reg.png</filename>
-                </imagetype>
-            </state>
-            <state type="full">
-                <imagetype name="upoff">
-                    <area>0,0,12,18</area>
-                    <filename>lb-ltarrow-sel.png</filename>
-                </imagetype>
-            </state>
         </statetype>
     </buttonlist>
 
@@ -671,46 +755,6 @@
             <filename>progressbar_fill.png</filename>
         </imagetype>
     </progressbar>
-
-        <!-- Base definition of a vertical scrollbar -->
-    <scrollbar name="basevertscrollbar">
-        <area>1114,0,14,970</area>
-        <layout>vertical</layout>
-        <hidedelay>0</hidedelay>
-        <shape name="background">
-            <area>0,0,100%,100%</area>
-            <type>roundbox</type>
-            <line color="#aaaaaa" alpha="255" width="1" />
-            <fill style="gradient">
-                <gradient direction="diagonal">
-                    <stop position="0" color="#999999" alpha="255" />
-                    <stop position="100" color="#999999" alpha="120" />
-                </gradient>
-            </fill>
-            <cornerradius>12</cornerradius>
-        </shape>
-        <shape name="slider">
-            <area>0,0,14,40</area>
-            <type>roundbox</type>
-            <line color="#0895f8" alpha="255" width="1" />
-            <fill style="gradient">
-                <gradient direction="diagonal">
-                    <stop position="0" color="#ff0000" alpha="255" />
-                    <stop position="100" color="#ff0000" alpha="120" />
-                </gradient>
-            </fill>
-            <cornerradius>12</cornerradius>
-        </shape>
-    </scrollbar>
-
-    <!-- Base definition of a horizontal scrollbar -->
-    <scrollbar name="basehorizscrollbar" from="basevertscrollbar">
-        <area>20,1030,1880,14</area>
-        <layout>horizontal</layout>
-        <shape name="slider">
-            <area>0,0,40,14</area>
-        </shape>
-    </scrollbar>
 
     <!-- Base definition of a webbrowser -->
     <webbrowser name="basewebbrowser">
