@@ -398,9 +398,12 @@
             <value>Manual Recording Schedule</value>
         </textarea>
 
-        <textarea name="titlelabel" from="basetextarea">
+        <shape name="background" from="basebackground">
+            <area>20,60,1240,640</area>
+        </shape>
+
+        <textarea name="titlelabel" from="baselabel">
             <area>40,130,400,30</area>
-            <font>basemedium</font>
             <align>right</align>
             <value>Title (Optional):</value>
         </textarea>
@@ -432,7 +435,7 @@
             <value>Start Time:</value>
         </textarea>
 
-        <textarea name="hourlabel" from="basetextarea">
+        <textarea name="hourlabel" from="titlelabel">
             <area>460,370,80,30</area>
             <value>Hour</value>
             <align>right</align>
@@ -1568,7 +1571,7 @@
 
     <window name="customedit">
 
-        <shape name="list_background" from="basebackground">
+        <shape name="background" from="basebackground">
             <area>20,60,1240,640</area>
         </shape>
 
