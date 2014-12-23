@@ -17,7 +17,7 @@
 
         <clock name="clock">
             <area>850,5,410,30</area>
-            <font>basesmall_normal</font>
+            <font>small_label</font>
             <align>vcenter,right</align>
             <template>%DATE% %TIME%</template>
         </clock>
@@ -122,18 +122,16 @@
 
         </buttonlist>
 
-        <buttonlist name="groups" from="basebuttonlist2">
-            <area>25,54,315,350</area>
-            <buttonarea>0,36,255,270</buttonarea>
+        <buttonlist name="groups" from="basebuttonlist3">
+            <area>25,85,318,300</area>
             <spacing>0</spacing>
-            <wrapstyle>captive</wrapstyle>
             <searchposition>-1,390</searchposition>
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active" >
-                    <area>5,0,310,30</area>
+                    <area>0,0,320,30</area>
                     <textarea name="buttontext">
-                        <area>3,0,100%-6,30</area>
+                        <area>3,0,100%-20,30</area>
                         <font>basesmall_normal</font>
                         <cutdown>yes</cutdown>
                         <align>left,vcenter</align>
@@ -141,10 +139,10 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="selectbar">
-                        <area>0,0,100%,30</area>
+                        <area>0,0,100%-20,30</area>
                     </shape>
                     <textarea name="buttontext">
-                        <area>3,0,100%-6,30</area>
+                        <area>3,0,100%-25,30</area>
                         <font>basesmall_normal</font>
                         <cutdown>yes</cutdown>
                         <align>left,vcenter</align>
@@ -152,35 +150,26 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="selectbar">
-                        <area>0,0,100%,30</area>
+                        <area>0,0,100%-20,30</area>
                     </shape>
                     <textarea name="buttontext">
-                        <area>3,0,100%-6,30</area>
+                        <area>3,0,100%-25,30</area>
                         <font>basesmall_normal_selected</font>
                         <cutdown>yes</cutdown>
                         <align>left,vcenter</align>
                     </textarea>
                 </state>
             </statetype>
-            <statetype name="upscrollarrow">
-                <position>240,310</position>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>270,310</position>
-            </statetype>
-
         </buttonlist>
 
-        <buttonlist name="recordings" from="basebuttonlist2">
-            <area>370,54,880,350</area>
-            <buttonarea>0,36,880,270</buttonarea>
-            <wrapstyle>captive</wrapstyle>
+        <buttonlist name="recordings" from="basebuttonlist3">
+            <area>370,85,883,300</area>
             <spacing>0</spacing>
             <searchposition>-1,390</searchposition>
             <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active">
-                <area>0,0,880,30</area>
+                <area>0,0,766,30</area>
                 <statetype name="status">
                     <position>3,2</position>
                     <state name="disabled">
@@ -211,15 +200,15 @@
                     <state name="marked"></state>
                 </statetype>
                     <textarea name="titlesubtitle" from="buttontext">
-                        <area>32,2,656,28</area>
+                        <area>32,2,636,28</area>
                         <align>vcenter</align>
                     </textarea>
                     <textarea name="shortstartdate" from="titlesubtitle">
-                        <area>634,2,120,28</area>
+                        <area>614,2,120,28</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="starttime" from="shortstartdate">
-                        <area>760,2,114,28</area>
+                        <area>740,2,114,28</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <statetype name="watched">
@@ -243,15 +232,15 @@
                 </state>
                 <state name="selectedinactive" from="active">
                     <shape name="selectbar">
-                        <area>0,0,100%,30</area>
+                        <area>0,0,865,30</area>
                     </shape>
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="selectbar">
-                        <area>0,0,100%,30</area>
+                        <area>0,0,865,30</area>
                     </shape>
                     <textarea name="titlesubtitle" from="buttontext">
-                        <area>32,2,656,28</area>
+                        <area>32,2,636,28</area>
                         <font>basesmall_normal_selected</font>
                         <font state="disabled">basesmall_disabled_selected</font>
                         <font state="error">basesmall_error_selected</font>
@@ -261,20 +250,14 @@
                         <align>vcenter</align>
                     </textarea>
                     <textarea name="shortstartdate" from="titlesubtitle">
-                        <area>634,2,120,28</area>
+                        <area>614,2,120,28</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="starttime" from="shortstartdate">
-                        <area>760,2,114,28</area>
+                        <area>740,2,114,28</area>
                         <align>right,vcenter</align>
                     </textarea>
                 </state>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>810,310</position>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>840,310</position>
             </statetype>
         </buttonlist>
 
@@ -385,17 +368,17 @@
             <align>vcenter</align>
         </textarea>
 
-        <textarea name="channel" from="basetextarea">
+        <textarea name="channel" from="baselabel">
             <area>30,444,256,30</area>
         </textarea>
 
-        <textarea name="timedate" from="basetextarea">
+        <textarea name="timedate" from="baselabel">
             <area>295,444,415,30</area>
             <align>hcenter</align>
             <template>%startdate%%| startyear%, %starttime% </template>
         </textarea>
 
-        <textarea name="filesize_str" from="basetextarea">
+        <textarea name="filesize_str" from="baselabel">
             <area>715,444,185,30</area>
             <align>right</align>
         </textarea>
