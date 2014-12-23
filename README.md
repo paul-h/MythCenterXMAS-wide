@@ -52,4 +52,4 @@ Updates:
                    Add a version of stream-ui.xml
                    Add scrollbars to the list and tweak the font colours on the Watch Recordings screen
                    Add scrollbar and tweak the fonts on the "programlist" screen
-
+                   Add a background and tweak the fonts on the Manual Recording Schedule screen
