@@ -1082,7 +1082,7 @@
             <font>baselarge</font>
             <value>Program Listings</value>
         </textarea>
-        <textarea name="keyinstr" from="basetextarea">
+        <textarea name="keyinstr" from="baselabel">
             <area>425,4,300,40</area>
             <align>hcenter,bottom</align>
             <value>(1) Time (2) Title</value>
@@ -1092,14 +1092,14 @@
             <area>20,48,1240,390</area>
         </shape>
 
-        <textarea name="curview" from="basetextarea">
+        <textarea name="curview" from="baselabel">
             <area>800,4,440,40</area>
             <align>right,bottom</align>
         </textarea>
 
-        <buttonlist name="proglist" from="basebuttonlist2">
-            <area>30,60,1220,374</area>
-            <buttonarea>0,0,1200,374</buttonarea>
+        <buttonlist name="proglist" from="basebuttonlist3">
+            <area>30,60,1220,368</area>
+            <buttonarea>0,0,1220,368</buttonarea>
             <spacing>4</spacing>
             <searchposition>-1,450</searchposition>
             <statetype name="buttonitem">
@@ -1140,7 +1140,7 @@
                         <align>right,vcenter</align>
                     </textarea>
                     <shape name="selectbar">
-                        <area>8,0,1180,28</area>
+                        <area>8,0,1190,28</area>
                     </shape>
                 </state>
                 <state name="selectedinactive" from="active" />
@@ -1161,10 +1161,10 @@
             <area>30,454,1220,40</area>
             <font>baselarge</font>
         </textarea>
-        <textarea name="channel" from="basetextarea">
+        <textarea name="channel" from="baselabel">
             <area>30,494,360,30</area>
         </textarea>
-        <textarea name="timedate" from="basetextarea">
+        <textarea name="timedate" from="baselabel">
             <area>410,494,520,30</area>
         </textarea>
         <textarea name="description" from="basetextarea">
@@ -1176,7 +1176,7 @@
             <area>30,665,560,30</area>
             <font>basemedium_highlight</font>
         </textarea>
-        <textarea name="programid" from="basetextarea">
+        <textarea name="programid" from="baselabel">
             <area>800,665,450,30</area>
             <align>right</align>
         </textarea>
