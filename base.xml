@@ -671,9 +671,14 @@
     <!-- Base definition of a textarea -->
     <textarea name="basetextarea">
         <area>0,0,0,0</area>
-        <font>small_label</font>
+        <font>small</font>
         <multiline>no</multiline>
         <align>left</align>
+    </textarea>
+
+    <!-- Base definition of a text label -->
+    <textarea name="baselabel" from="basetextarea">
+        <font>small_label</font>
     </textarea>
 
     <!-- Base definition of a textedit -->

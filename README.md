@@ -50,3 +50,4 @@ Updates:
                    Update the buttonlists and spinboxes to use the new arrow images
                    Add new buttonlist with scrollbars
                    Add a version of stream-ui.xml
+                   Add scrollbars to the list and tweak the font colours on the Watch Recordings screen
