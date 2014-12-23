@@ -487,15 +487,15 @@
             <area>20,48,1240,380</area>
         </shape>
 
-        <textarea name="status" from="basetextarea">
-            <area>770,10,480,30</area>
+        <textarea name="status" from="baselabel">
+            <area>770,20,480,30</area>
             <align>right</align>
-            <font>basemedium</font>
-            <font state="warning">basemediumred</font>
+            <font>baselabel</font>
+            <font state="warning">basesmallred</font>
             <align>right</align>
         </textarea>
 
-        <textarea name="filterlabel" from="basetextarea">
+        <textarea name="filterlabel" from="baselabel">
             <area>30,430,130,30</area>
             <value>Showing:</value>
         </textarea>
@@ -504,9 +504,9 @@
             <area>180,430,150,30</area>
         </textarea>
 
-        <buttonlist name="schedules" from="basebuttonlist2">
-            <area>30,57,1220,374</area>
-            <buttonarea>0,0,1200,374</buttonarea>
+        <buttonlist name="schedules" from="basebuttonlist3">
+            <area>30,57,1220,365</area>
+            <buttonarea>0,0,1220,365</buttonarea>
             <spacing>4</spacing>
             <searchposition>-1,450</searchposition>
             <statetype name="buttonitem">
@@ -547,16 +547,10 @@
                         <align>right,vcenter</align>
                      </textarea>
                     <shape name="selectbar">
-                        <area>8,0,1180,28</area>
+                        <area>0,0,1200,28</area>
                     </shape>
                 </state>
                 <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>1190,4</position>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>1190,340</position>
             </statetype>
         </buttonlist>
 
@@ -569,11 +563,11 @@
             <font>baselarge</font>
         </textarea>
 
-        <textarea name="channel" from="basetextarea">
+        <textarea name="channel" from="baselabel">
             <area>30,494,360,30</area>
         </textarea>
 
-        <textarea name="timedate" from="basetextarea">
+        <textarea name="timedate" from="baselabel">
             <area>410,494,520,30</area>
         </textarea>
 
@@ -584,7 +578,7 @@
             <template>%"|SUBTITLE|"\n%%YEARSTARS| %%DESCRIPTION%</template>
         </textarea>
 
-        <textarea name="rectypestatus" from="basetextarea">
+        <textarea name="rectypestatus" from="baselabel">
             <area>630,430,620,30</area>
             <align>right</align>
         </textarea>
@@ -599,7 +593,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <textarea name="helptext" from="basetextarea">
+        <textarea name="helptext" from="baselabel">
             <area>0,685,1280,30</area>
             <value>(1) All  (2) Important</value>
             <align>center</align>
