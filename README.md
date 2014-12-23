@@ -54,3 +54,5 @@ Updates:
                    Add scrollbar and tweak the fonts on the "programlist" screen
                    Add a background and tweak the fonts on the Manual Recording Schedule screen
                    Add a background and tweak the fonts on the Manage Recording Rules screen
+                   Add scrollbar to the list and tweak the font colours on the Scheduled Recordings screen
+
