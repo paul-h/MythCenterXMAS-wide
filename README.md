@@ -43,7 +43,7 @@ Updates:
                    import_music: add a background and tweak the layout
                    trackdetail_popup: use the proper background
                    bookmarkmanager:  fix the title and backgrounds
-??/??/?? -  1.2  - Remove the horizon image from the main menu
+23/12/14 -  1.2  - Remove the horizon image from the main menu
                    Add some new backgrounds
                    Add some music controls
                    Move the base scrollbars and add some base arrow images
