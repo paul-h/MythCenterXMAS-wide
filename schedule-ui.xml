@@ -1432,30 +1432,30 @@
         </textarea>
 
         <shape name="list_background" from="basebackground">
-            <area>20,48,1240,360</area>
+            <area>20,48,1240,350</area>
         </shape>
 
-        <textarea name="callsignlabel" from="basetextarea">
+        <textarea name="callsignlabel" from="baselabel">
             <area>620,14,170,40</area>
             <value>Channel</value>
             <align>left</align>
         </textarea>
 
-        <textarea name="lastrecordedlabel" from="basetextarea">
+        <textarea name="lastrecordedlabel" from="baselabel">
             <area>840,14,300,40</area>
             <value>Last Recorded</value>
             <align>right</align>
         </textarea>
 
-        <textarea name="prioritylabel" from="basetextarea">
+        <textarea name="prioritylabel" from="baselabel">
             <area>1065,14,180,40</area>
             <align>right</align>
             <value>Priority</value>
         </textarea>
 
-        <buttonlist name="programs" from="basebuttonlist2">
-            <area>20,26,1280,420</area>
-            <buttonarea>0,34,1240,340</buttonarea>
+        <buttonlist name="programs" from="basebuttonlist3">
+            <area>20,56,1230,335</area>
+            <buttonarea>0,0,1230,340</buttonarea>
             <searchposition>-1,450</searchposition>
             <statetype name="buttonitem">
                 <state name="active">
@@ -1484,18 +1484,16 @@
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="selectbar">
-                        <area>10,0,1220,26</area>
+                        <area>10,0,1200,26</area>
                     </shape>
                 </state>
                 <state name="selectedinactive" from="active" />
             </statetype>
-            <statetype name="upscrollarrow">
-                <position>1170,386</position>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>1200,386</position>
-            </statetype>
         </buttonlist>
+
+        <shape name="details_background" from="basebackground">
+            <area>20,440,1240,230</area>
+        </shape>
 
         <textarea name="title" from="basetextarea">
             <area>30,450,740,40</area>
@@ -1521,7 +1519,7 @@
             <align>right</align>
         </textarea>
 
-        <textarea name="recordinggrouplabel" from="basetextarea">
+        <textarea name="recordinggrouplabel" from="baselabel">
             <area>30,550,250,30</area>
             <value>Recording Group:</value>
             <align>right</align>
@@ -1531,7 +1529,7 @@
             <area>300,550,200,30</area>
         </textarea>
 
-        <textarea name="categorylabel" from="basetextarea">
+        <textarea name="categorylabel" from="baselabel">
             <area>30,580,250,30</area>
             <value>Category:</value>
             <align>right</align>
@@ -1541,7 +1539,7 @@
             <area>300,580,200,30</area>
         </textarea>
 
-        <textarea name="storagegrouplabel" from="basetextarea">
+        <textarea name="storagegrouplabel" from="baselabel">
             <area>640,550,250,30</area>
             <value>Storage Group:</value>
             <align>right</align>
@@ -1551,7 +1549,7 @@
             <area>900,550,200,30</area>
         </textarea>
 
-        <textarea name="recordingprofilelabel" from="basetextarea">
+        <textarea name="recordingprofilelabel" from="baselabel">
             <area>640,580,250,30</area>
             <value>Recording Profile:</value>
             <align>right</align>
@@ -1561,7 +1559,7 @@
             <area>900,580,200,30</area>
         </textarea>
 
-        <textarea name="keyinstr">
+        <textarea name="keyinstr" from="baselabel">
             <area>0,680,1280,30</area>
             <value>(1) Title (2) Priority (4) Type</value>
             <align>allcenter</align>
