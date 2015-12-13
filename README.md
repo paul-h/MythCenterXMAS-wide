@@ -55,4 +55,9 @@ Updates:
                    Add a background and tweak the fonts on the Manual Recording Schedule screen
                    Add a background and tweak the fonts on the Manage Recording Rules screen
                    Add scrollbar to the list and tweak the font colours on the Scheduled Recordings screen
-
+13/12/15 -  1.3  - Add some new backgrounds and remove some naff ones
+                   Video tree view: add fanart and add the year to the metadata editor
+                   Fix the progress bar on various screens
+                   Fix the music visualizer borders
+                   Increase the width of the text areas on the visualizer track info popup.
+                   Add scrollbars to the muisc playlist and streamlist screens
