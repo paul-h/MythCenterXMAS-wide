@@ -64,7 +64,6 @@
                             <line color="#cc0000" alpha="100" width="3" />
                             <fill style="gradient">
                                 <gradient start="#aa0000" end="#ff0000" alpha="200" direction="vertical" />
-                                <line color="#ff0000" width="3" />
                             </fill>
                         </shape>
                         <textarea name="buttontext">
@@ -91,7 +90,7 @@
                             <minsize>50,100%</minsize>
                             <type>roundbox</type>
                             <fill color="#aa0000" alpha="120" />
--                           <line color="#cc0000" width="3" />
+                            <line color="#cc0000" width="3" />
                             <cornerradius>15</cornerradius>
                         </shape>
                     </group>
