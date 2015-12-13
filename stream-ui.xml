@@ -168,7 +168,7 @@
         </buttonlist>
 
         <imagetype name="mm_blackhole_border">
-            <filename>mm_blackhole_border.png</filename>
+            <filename>music/mm_blackhole_border.png</filename>
             <area>32,489,162,162</area>
         </imagetype>
 
@@ -212,7 +212,7 @@
         </textarea>
 
         <imagetype name="visualizer_border">
-            <filename>mm_blackhole_border.png</filename>
+            <filename>music/mm_blackhole_border.png</filename>
             <area>1082,489,162,162</area>
         </imagetype>
 
