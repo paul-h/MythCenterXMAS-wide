@@ -1104,10 +1104,10 @@
             <layout>horizontal</layout>
             <style>reveal</style>
             <imagetype name="background">
-                <filename>mm_progress-bg.png</filename>
+                <filename>progress-bg.png</filename>
             </imagetype>
             <imagetype name="progressimage">
-                <filename>mm_progress-fg.png</filename>
+                <filename>progress-fg.png</filename>
             </imagetype>
         </progressbar>
     </window>
@@ -1160,11 +1160,11 @@
             <style>reveal</style>
             <imagetype name="background">
                 <area>0,0,100%,100%</area>
-                <filename>mm_progress-bg.png</filename>
+                <filename>progress-bg.png</filename>
             </imagetype>
             <imagetype name="progressimage">
                 <area>0,0,100%,100%</area>
-                <filename>mm_progress-fg.png</filename>
+                <filename>progress-fg.png</filename>
             </imagetype>
         </progressbar>
 
@@ -2204,6 +2204,12 @@
         <imagetype name="coverart">
             <area>25,90,300,300</area>
             <filename>mm_nothumb.png</filename>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+
+        <imagetype name="santa">
+            <area>25,380,300,300</area>
+            <filename>ui/santa.gif</filename>
             <preserveaspect>true</preserveaspect>
         </imagetype>
 

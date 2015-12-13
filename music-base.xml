@@ -372,10 +372,10 @@
         <layout>horizontal</layout>
         <style>reveal</style>
         <imagetype name="background">
-            <filename>mm_progress-bg.png</filename>
+            <filename>progress-bg.png</filename>
         </imagetype>
         <imagetype name="progressimage">
-            <filename>mm_progress-fg.png</filename>
+            <filename>progress-fg.png</filename>
         </imagetype>
     </progressbar>
 
@@ -451,10 +451,10 @@
         <layout>horizontal</layout>
         <style>reveal</style>
         <imagetype name="background">
-            <filename>mm_progress-bg.png</filename>
+            <filename>progress-bg.png</filename>
         </imagetype>
         <imagetype name="progressimage">
-            <filename>mm_progress-fg.png</filename>
+            <filename>progress-fg.png</filename>
         </imagetype>
     </progressbar>
 
