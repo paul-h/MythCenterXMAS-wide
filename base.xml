@@ -180,8 +180,8 @@
     <shape name="baseselectedwidgetshape" from="basewidgetshape">
         <fill style="gradient">
             <gradient start="#aa0000" end="#ff0000" alpha="200" direction="vertical" />
-            <line color="#ff0000" width="3" />
         </fill>
+        <line color="#ff0000" width="3" />
     </shape>
 
     <shape name="baseinactivewidgetshape" from="basewidgetshape">
@@ -339,8 +339,7 @@
             <state name="selectedactive" from="active">
                 <shape name="background">
                     <fill style="gradient">
-                        <gradient start="#ff0000" end="#440000" alpha="255" /> -->
-                        <!--<gradient start="#55410c" end="#ebca57" alpha="255" /> -->
+                        <gradient start="#ff0000" end="#440000" alpha="255" />
                     </fill>
                 </shape>
             </state>
@@ -798,17 +797,17 @@
             <font>baselarge</font>
         </textarea>
 
-        <textarea name="timedate" from="basetextarea">
+        <textarea name="timedate" from="baselabel">
             <area>26,246,440,28</area>
         </textarea>
 
-        <textarea name="template" from="basetextarea">
+        <textarea name="template" from="baselabel">
             <area>516,246,340,28</area>
             <align>left</align>
             <template>%Using |TEMPLATE| Template%</template>
         </textarea>
 
-        <textarea name="channel" from="basetextarea">
+        <textarea name="channel" from="baselabel">
             <area>1000,246,200,28</area>
             <align>right</align>
         </textarea>

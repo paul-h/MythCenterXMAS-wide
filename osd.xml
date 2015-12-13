@@ -281,7 +281,7 @@
             <weight>bold</weight>
         </fontdef>
         <fontdef name="basesmall_normal_inactive" from="basesmall">
-            <color>#cccc</color>
+            <color>#cccc00</color>
         </fontdef>
         <area>-1,-1,500,500</area>
         <shape name="background1">

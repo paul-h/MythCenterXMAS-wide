@@ -612,9 +612,9 @@
             <area>20,44,1240,390</area>
         </shape>
 
-        <buttonlist name="channels" from="basebuttonlist2">
-            <area>30,52,1200,380</area>
-            <buttonarea>0,0,1200,380</buttonarea>
+        <buttonlist name="channels" from="basebuttonlist3">
+            <area>30,54,1220,370</area>
+            <buttonarea>0,0,1220,380</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
                     <imagetype name="icon">
@@ -634,13 +634,13 @@
                         <area>570,2,550,24</area>
                     </textarea>
                     <textarea name="priority" from="chanstr">
-                        <area>1130,2,40,24</area>
+                        <area>1150,2,40,24</area>
                         <align>right</align>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
                     <shape name="selectbar">
-                        <area>0,0,1176,30</area>
+                        <area>0,0,1200,30</area>
                         <type>roundbox</type>
                         <line color="#ff0000" alpha="255" width="1" />
                         <fill color="#ff0000" alpha="128" />
@@ -648,12 +648,6 @@
                     </shape>
                 </state>
                 <state name="selectedinactive" from="active" />
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>1190,4</position>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>1190,350</position>
             </statetype>
         </buttonlist>
 
@@ -671,7 +665,7 @@
             <font>baselarge</font>
         </textarea>
 
-        <textarea name="sourcelabel" from="basetextarea">
+        <textarea name="sourcelabel" from="baselabel">
             <area>540,514,140,30</area>
             <value>Source:</value>
         </textarea>
@@ -680,7 +674,7 @@
             <area>700,514,400,30</area>
         </textarea>
 
-        <textarea name="callsignlabel" from="basetextarea">
+        <textarea name="callsignlabel" from="sourcelabel">
             <area>540,550,140,30</area>
             <value>Callsign:</value>
         </textarea>
@@ -689,7 +683,7 @@
             <area>700,550,400,30</area>
         </textarea>
 
-        <textarea name="recprioritylabel" from="basetextarea">
+        <textarea name="recprioritylabel" from="sourcelabel">
             <area>540,584,140,30</area>
             <value>Priority:</value>
         </textarea>
@@ -708,7 +702,7 @@
             <align>allcenter</align>
         </textarea>
 
-        <textarea name="helptext" from="basetextarea">
+        <textarea name="helptext" from="baselabel">
             <area>0,670,1280,30</area>
             <value>(1) Channel (2) Priority</value>
             <align>center</align>
@@ -724,76 +718,54 @@
             <value>Custom Priority Rules</value>
         </textarea>
 
-        <textarea name="ruleslabel" from="basetextarea">
-            <area>280,102,250,30</area>
-            <font>basemedium</font>
+        <shape name="background" from="basebackground">
+            <area>20,60,1240,640</area>
+        </shape>
+
+        <textarea name="ruleslabel" from="baselabel">
+            <area>80,107,400,30</area>
             <align>right</align>
             <value>Existing Rules:</value>
         </textarea>
 
         <buttonlist name="rules" from="basewideselector">
-            <position>540,100</position>
+            <position>490,100</position>
         </buttonlist>
 
         <textarea name="titlelabel" from="ruleslabel">
-            <position>280,162</position>
+            <position>80,167</position>
             <value>Rule Name:</value>
         </textarea>
 
         <textedit name="title" from="basetextedit">
-            <position>540,156</position>
+            <position>490,156</position>
         </textedit>
 
         <textarea name="prioritylabel" from="ruleslabel">
-            <position>280,222</position>
+            <position>80,225</position>
             <value>Priority Change:</value>
         </textarea>
 
         <spinbox name="priority" from="basespinbox">
-            <position>540,220</position>
+            <position>490,220</position>
         </spinbox>
 
         <textarea name="clauseslabel" from="ruleslabel">
-            <area>340,300,600,40</area>
-            <value>Select a clause from the list.</value>
-            <align>allcenter</align>
+            <area>80,355,400,40</area>
+            <value>Select a clause from the list:</value>
         </textarea>
 
         <buttonlist name="clauses" from="basewideselector">
-            <position>360,350</position>
+            <position>490,350</position>
         </buttonlist>
 
         <button name="add" from="basebutton">
-            <position>770,350</position>
+            <position>490,400</position>
             <value>Add Clause</value>
         </button>
 
-        <textedit name="description">
-            <area>340,400,600,100</area>
-            <statetype name="background">
-                <area>0,0,100%,100%</area>
-                <state name="active">
-                    <area>0,0,100%,100%</area>
-                    <shape name="background">
-                        <area>0,0,100%,100%</area>
-                        <fill color="#FFFFFF" alpha="180" />
-                    </shape>
-                </state>
-                <state name="selected" from="active">
-                    <shape name="background">
-                        <fill alpha="255" />
-                    </shape>
-                </state>
-                <state name="inactive" from="active" />
-            </statetype>
-            <imagetype name="cursor">
-                <filename>cursor.png</filename>
-            </imagetype>
-            <textarea name="text">
-                <area>12,12,576,76</area>
-                <font>basesmall_textedit</font>
-                <multiline>yes</multiline>
-            </textarea>
+        <textedit name="description" from="basetextedit">
+            <area>490,450,675,100</area>
         </textedit>
 
         <button name="cancel" from="basebutton">
@@ -1777,6 +1749,10 @@
         <group name="programdetails" from="baseprogramdetailsgroup">
             <area>24,24,1230,276</area>
         </group>
+
+        <shape name="bottombackground" from="basebackground">
+            <area>24,305,1232,400</area>
+        </shape>
 
         <buttonlist name="filters" from="basebuttonlist">
             <area>370,310,540,328</area>
