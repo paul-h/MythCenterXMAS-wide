@@ -175,7 +175,7 @@
     </statetype>
 
     <!-- current playlist button list -->
-    <buttonlist name="basecurrentplaylist" from="basebuttonlist2">
+    <buttonlist name="basecurrentplaylist" from="basebuttonlist3">
         <area>35,20,1210,340</area>
         <spacing>4</spacing>
         <layout>vertical</layout>
@@ -184,14 +184,14 @@
         <buttonarea>0,0,1210,340</buttonarea>
         <statetype name="buttonitem">
             <state name="active">
-                <area>0,0,1210,35</area>
+                <area>0,0,100%-5,35</area>
                 <imagetype name="buttonimage">
                     <area>5,0,35,35</area>
                     <filename>mm_nothumb.png</filename>
                 </imagetype>
 
                 <statetype name="playstate">
-                    <position>1180,0</position>
+                    <position>100%-30,5</position>
                     <state name="playing">
                         <imagetype name="animation">
                             <position>0,0</position>
@@ -234,19 +234,19 @@
                     <template>%1 -</template>
                 </textarea>
                 <textarea name="length" from="artist">
-                    <area>1040,0,120,35</area>
+                    <area>1035,0,120,35</area>
                     <align>right,vcenter</align>
                     <font>basesmall</font>
                 </textarea>
             </state>
             <state name="selectedactive" from="active">
-                <area>0,0,1210,90</area>
+                <area>0,0,100%-5,90</area>
                 <imagetype name="buttonimage">
                     <area>5,5,80,80</area>
                     <filename>mm_nothumb.png</filename>
                 </imagetype>
                 <shape name="selectbar">
-                    <area>0,0,1210,90</area>
+                    <area>0,0,100%,90</area>
                 </shape>
 
                 <textarea name="title" from="buttontext">
@@ -266,7 +266,7 @@
                     <template>%1 -</template>
                 </textarea>
                 <textarea name="length" from="artist">
-                    <area>1040,0,120,35</area>
+                    <area>1035,0,120,35</area>
                     <align>right,top</align>
                     <font>basesmall</font>
                 </textarea>
@@ -290,23 +290,23 @@
                     <font>basesmall</font>
                 </textarea>
                 <textarea name="playcount" from="buttontext">
-                    <area>940,60,220,30</area>
+                    <area>935,60,220,30</area>
                     <align>right,top</align>
                     <font>basesmall</font>
                     <template>Played %1 times</template>
                 </textarea>
                 <statetype name="playstate">
-                    <position>1180,30</position>
+                    <position>100%-30,35</position>
                 </statetype>
             </state>
             <state name="selectedinactive" from="active">
-                <area>0,0,1210,90</area>
+                <area>0,0,100%-5,90</area>
                 <imagetype name="buttonimage">
                     <area>5,5,80,80</area>
                     <filename>mm_nothumb.png</filename>
                 </imagetype>
                 <shape name="selectbar">
-                    <area>0,0,1210,90</area>
+                    <area>0,0,100%,90</area>
                 </shape>
 
                 <textarea name="title" from="buttontext">
@@ -325,7 +325,7 @@
                     <template>%1 -</template>
                 </textarea>
                 <textarea name="length" from="artist">
-                    <area>1040,0,120,35</area>
+                    <area>1035,0,120,35</area>
                     <align>right,top</align>
                     <font>basesmall</font>
                 </textarea>
@@ -348,21 +348,15 @@
                     <area>700,60,250,30</area>
                 </textarea>
                 <textarea name="playcount" from="buttontext">
-                    <area>940,60,220,30</area>
+                    <area>935,60,220,30</area>
                     <align>right,top</align>
                     <font>basesmall</font>
                     <template>Played %1 times</template>
                 </textarea>
                 <statetype name="playstate">
-                    <position>1180,30</position>
+                    <position>100%-30,35</position>
                 </statetype>
             </state>
-        </statetype>
-        <statetype name="upscrollarrow">
-            <position>1150,345</position>
-        </statetype>
-        <statetype name="downscrollarrow">
-            <position>1180,345</position>
         </statetype>
     </buttonlist>
 

@@ -24,16 +24,16 @@
             <value>Press MENU to add some radio streams to play.</value>
         </textarea>
 
-        <buttonlist name="streamlist" from="basebuttonlist2">
-            <area>25,25,1225,250</area>
+        <buttonlist name="streamlist" from="basebuttonlist3">
+            <area>25,25,1225,245</area>
             <spacing>0</spacing>
             <layout>vertical</layout>
             <arrange>stack</arrange>
             <showarrow>no</showarrow>
-            <buttonarea>0,0,1225,230</buttonarea>
+            <buttonarea>0,5,1225,240</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,100%,46</area>
+                    <area>0,0,100%-5,46</area>
 
                     <imagetype name="buttonimage">
                         <area>5,5,36,36</area>
@@ -41,7 +41,7 @@
                     </imagetype>
 
                     <statetype name="playstate">
-                        <position>1190,10</position>
+                        <position>1170,10</position>
                         <state name="playing">
                             <imagetype name="animation">
                                 <position>0,0</position>
@@ -95,24 +95,18 @@
                     </shape>
                 </state>
             </statetype>
-            <statetype name="upscrollarrow">
-                <position>1140,230</position>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>1180,230</position>
-            </statetype>
         </buttonlist>
 
-        <buttonlist name="playedtrackslist" from="basebuttonlist2">
+        <buttonlist name="playedtrackslist" from="basebuttonlist3">
             <area>25,300,1225,150</area>
             <spacing>0</spacing>
             <layout>vertical</layout>
             <arrange>stack</arrange>
             <showarrow>no</showarrow>
-            <buttonarea>0,0,1225,150</buttonarea>
+            <buttonarea>0,5,1225,150</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,100%,46</area>
+                    <area>0,0,100%-5,46</area>
 
                     <imagetype name="buttonimage">
                         <area>5,5,36,36</area>
@@ -158,12 +152,6 @@
                         <area>0,0,100%,46</area>
                     </shape>
                 </state>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>1140,135</position>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>1180,135</position>
             </statetype>
         </buttonlist>
 
