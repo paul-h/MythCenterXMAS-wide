@@ -121,7 +121,7 @@
         </textarea>
 
         <buttonlist name="currentplaylist" from="basecurrentplaylist">
-            <position>35,20</position>
+            <position>35,25</position>
             <searchposition>-1,410</searchposition>
         </buttonlist>
 
@@ -1183,6 +1183,10 @@
             <value>Edit Track Information</value>
         </textarea>
 
+        <shape name="background" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
+        
         <!-- Labels -->
 
         <textarea name="compilation_label" >
@@ -1385,57 +1389,61 @@
             <value>Album Art</value>
         </textarea>
 
+        <shape name="background" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
+        
         <!-- Labels -->
 
         <shape name="bgimage1">
-            <area>200,40,210,600</area>
+            <area>200,60,210,590</area>
             <type>roundbox</type>
             <fill color="#000000" alpha="60" />
             <cornerradius>3</cornerradius>
         </shape>
 
         <shape name="bgimage2" from="bgimage1">
-            <area>450,40,570,510</area>
+            <area>450,60,570,510</area>
         </shape>
 
         <textarea name="notfoundtext" from="basetextarea">
-            <area>450,40,570,510</area>
+            <area>450,50,570,510</area>
             <align>allcenter</align>
             <value>No Album Art Found</value>
         </textarea>
 
         <imagetype name="coverartimage">
-            <area>470,60,530,470</area>
+            <area>470,70,530,470</area>
         </imagetype>
 
         <shape name="bgimage3" from="bgimage1">
-            <area>450,570,570,70</area>
+            <area>450,580,570,70</area>
         </shape>
 
         <textarea name="label1"  from="basetextarea">
-            <area>470,575,170,30</area>
+            <area>470,585,170,30</area>
             <align>right</align>
             <value>Filename:</value>
         </textarea>
 
         <textarea name="label2" from="basetextarea">
-            <area>470,605,170,30</area>
+            <area>470,615,170,30</area>
             <align>right</align>
             <value>Type:</value>
         </textarea>
 
         <textarea name="imagefilenametext" from="basetextarea">
-            <area>645,575,340,30</area>
+            <area>645,585,340,30</area>
             <value></value>
         </textarea>
 
         <textarea name="imagetypetext" from="basetextarea">
-            <area>645,605,340,30</area>
+            <area>645,615,340,30</area>
             <value></value>
         </textarea>
 
         <buttonlist name="coverartlist">
-            <area>215,55,180,610</area>
+            <area>215,65,180,610</area>
             <buttonarea>0,0,170,555</buttonarea>
             <layout>grid</layout>
             <spacing>5</spacing>
@@ -1525,12 +1533,12 @@
 
         <!-- Push buttons -->
         <button name="metadatabutton" from="basebutton">
-            <position>100,660</position>
+            <position>100,650</position>
             <value>Metadata</value>
         </button>
 
         <button name="donebutton" from="basebutton">
-            <position>1000,660</position>
+            <position>1000,650</position>
             <value>Done</value>
         </button>
 
