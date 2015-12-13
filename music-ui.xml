@@ -358,23 +358,23 @@
             <cornerradius>12</cornerradius>
         </shape>
 
-        <imagetype name="mm_blackhole_border">
-            <filename>mm_blackhole_border.png</filename>
+        <imagetype name="blackhole_border">
+            <filename>music/mm_blackhole_border.png</filename>
             <area>20,20,148,148</area>
         </imagetype>
 
         <textarea name="title" from="basetextarea">
-            <area>180,15,415,34</area>
+            <area>180,15,800,34</area>
             <font>baselarge</font>
         </textarea>
 
         <textarea name="artist" from="basetextarea">
-            <area>180,50,415,35</area>
+            <area>180,50,800,35</area>
             <font>basemedium</font>
         </textarea>
 
         <textarea name="album" from="basetextarea">
-            <area>180,80,415,35</area>
+            <area>180,80,800,35</area>
             <font>basemedium</font>
         </textarea>
 
@@ -1062,8 +1062,8 @@
             <area>0,0,100%,100%</area>
         </shape>
 
-        <imagetype name="mm_blackhole_border">
-            <filename>mm_blackhole_border.png</filename>
+        <imagetype name="blackhole_border">
+            <filename>music/mm_blackhole_border.png</filename>
             <area>20,20,148,148</area>
         </imagetype>
 
