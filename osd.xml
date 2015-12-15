@@ -171,11 +171,11 @@
             <style>reveal</style>
             <imagetype name="background">
                 <area>4,3,100%-4,100%-3</area>
-                <filename>mm_progress-bg.png</filename>
+                <filename>progress-bg.png</filename>
             </imagetype>
             <imagetype name="progressimage">
                 <area>0,0,100%,100%</area>
-                <filename>mm_progress-fg.png</filename>
+                <filename>progress-fg.png</filename>
             </imagetype>
         </progressbar>
     </window>
