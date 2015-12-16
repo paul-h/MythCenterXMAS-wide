@@ -75,4 +75,4 @@ Updates:
   - Theme the "itemdetailpopup" video details popup
   - Theme the "descriptionpopup" video plot popup
   - Theme the video Player, Metadata and File Type settings screens
-  
+  - Theme the video 'manager' screen
