@@ -20,19 +20,19 @@
     </window>
 
     <window name="descriptionpopup">
-        <area>-1,-1,413,426</area>
+        <area>-1,-1,513,426</area>
 
-        <imagetype name="box">
-            <filename>mv_results_popup.png</filename>
-        </imagetype>
+        <shape name="backimg" from="basepopupbackground">
+            <area>0,0,100%,100%</area>
+        </shape>
 
         <textarea name="description" from="basetextarea">
-            <area>18,18,360,325</area>
+            <area>18,18,480,345</area>
             <multiline>yes</multiline>
         </textarea>
 
         <button name="ok" from="basebutton">
-            <position>119,350</position>
+            <position>180,370</position>
             <value>OK</value>
         </button>
     </window>
