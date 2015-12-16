@@ -839,14 +839,18 @@
     </window>
 
     <window name="file_associations">
+
         <textarea name="title" from="basetextarea">
-            <area>10,10,1260,50</area>
-            <value>MythVideo File Associations</value>
+            <area>15,5,800,50</area>
             <font>baselarge</font>
-            <align>hcenter,vcenter</align>
+            <value>MythVideo File Associations</value>
         </textarea>
 
-        <textarea name="extension_text" from="basetextarea">
+        <shape name="background" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
+
+        <textarea name="extension_text" from="baselabel">
             <area>140,200,400,40</area>
             <value>Extension:</value>
             <align>right,vcenter</align>
@@ -884,17 +888,17 @@
         </checkbox>
 
         <button name="done_button" from="basebutton">
-            <position>850,600</position>
+            <position>850,650</position>
             <value>Done</value>
         </button>
 
         <button name="new_button" from="basebutton">
-            <position>680,600</position>
+            <position>680,650</position>
             <value>New</value>
         </button>
 
         <button name="delete_button" from="basebutton">
-            <position>300,600</position>
+            <position>300,650</position>
             <value>Delete</value>
         </button>
     </window>
@@ -1376,14 +1380,17 @@
     <window name="playersettings">
 
         <textarea name="title" from="basetextarea">
-            <area>20,40,1240,40</area>
-            <value>Player Settings</value>
-            <align>hcenter,vcenter</align>
+            <area>15,5,800,50</area>
             <font>baselarge</font>
+            <value>Player Settings</value>
         </textarea>
 
-        <textarea name="default_text" from="basetextarea">
-            <area>300,105,230,30</area>
+        <shape name="background" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
+
+        <textarea name="default_text" from="baselabel">
+            <area>100,105,430,30</area>
             <align>right</align>
             <value>Default Player:</value>
         </textarea>
@@ -1392,8 +1399,8 @@
             <position>550,95</position>
         </textedit>
 
-        <textarea name="dvd_text" from="basetextarea">
-            <area>300,175,230,30</area>
+        <textarea name="dvd_text" from="baselabel">
+            <area>100,175,430,30</area>
             <align>right</align>
             <value>DVD Player:</value>
         </textarea>
@@ -1402,8 +1409,8 @@
             <position>550,165</position>
         </textedit>
 
-        <textarea name="dvddrive_text" from="basetextarea">
-            <area>300,245,230,30</area>
+        <textarea name="dvddrive_text" from="baselabel">
+            <area>100,245,430,30</area>
             <align>right</align>
             <value>DVD Drive:</value>
         </textarea>
@@ -1412,8 +1419,8 @@
             <position>550,235</position>
         </textedit>
 
-        <textarea name="bluraymount_text" from="basetextarea">
-            <area>300,315,230,30</area>
+        <textarea name="bluraymount_text" from="baselabel">
+            <area>100,315,430,30</area>
             <align>right</align>
             <value>Blu-ray Mount:</value>
         </textarea>
@@ -1422,8 +1429,8 @@
             <position>550,305</position>
         </textedit>
 
-        <textarea name="blurayreg_text" from="basetextarea">
-            <area>300,385,230,30</area>
+        <textarea name="blurayreg_text" from="baselabel">
+            <area>100,385,430,30</area>
             <align>right</align>
             <value>Blu-ray Region:</value>
         </textarea>
@@ -1433,16 +1440,17 @@
         </buttonlist>
 
         <checkbox name="altcheck" from="basecheckbox">
-            <position>775,450</position>
+            <position>550,450</position>
         </checkbox>
 
-        <textarea name="altcheck_text" from="basetextarea">
-            <area>500,450,300,30</area>
+        <textarea name="altcheck_text" from="baselabel">
+            <area>100,450,430,30</area>
+            <align>right</align>
             <value>Enable Alternate Player:</value>
         </textarea>
 
-        <textarea name="alt_text" from="basetextarea">
-            <area>300,515,230,30</area>
+        <textarea name="alt_text" from="baselabel">
+            <area>100,515,430,30</area>
             <align>right</align>
             <value>Alternate Player:</value>
         </textarea>
@@ -1452,8 +1460,10 @@
         </textedit>
 
         <textarea name="helptext" from="basetextarea">
-            <area>50,580,1180,60</area>
-            <multiline>true</multiline>
+            <area>30,560,1220,90</area>
+            <multiline>yes</multiline>
+            <font>basesmall</font>
+            <align>allcenter</align>
         </textarea>
 
         <button name="ok" from="basebutton">
@@ -1471,44 +1481,47 @@
     <window name="metadatasettings">
 
         <textarea name="title" from="basetextarea">
-            <area>20,40,1240,40</area>
-            <value>Video Metadata Settings</value>
-            <align>hcenter,vcenter</align>
+            <area>15,5,800,50</area>
             <font>baselarge</font>
+            <value>Video Metadata Settings</value>
         </textarea>
-        
+
+        <shape name="background" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
+
         <textarea name="helptext" from="basetextarea">
-            <area>90,400,1100,280</area>
+            <area>90,500,1100,130</area>
             <multiline>yes</multiline>
             <font>basesmall</font>
             <align>allcenter</align>
         </textarea>
         
-        <textarea name="autometacheck_text" from="basetextarea">
+        <textarea name="autometacheck_text" from="baselabel">
             <area>485,185,500,40</area>
             <value>Perform metadata update after video scan</value>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="trailercheck_text" from="basetextarea">
-            <area>485,230,400,40</area>
+        <textarea name="trailercheck_text" from="baselabel">
+            <area>485,230,750,40</area>
             <value>Enable Random Trailer Playback</value>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="unknownfilecheck_text" from="basetextarea">
-            <area>485,350,400,40</area>
+        <textarea name="unknownfilecheck_text" from="baselabel">
+            <area>485,350,750,40</area>
             <value>Display unknown file types</value>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="treeloadsmetacheck_text" from="basetextarea">
-            <area>485,410,400,40</area>
+        <textarea name="treeloadsmetacheck_text" from="baselabel">
+            <area>485,410,750,40</area>
             <value>Enable metadata in file browse mode</value>
             <align>left,vcenter</align>
         </textarea>
 
-        <textarea name="trailerplay_text" from="basetextarea">
+        <textarea name="trailerplay_text" from="baselabel">
             <position>225,290</position>
             <value>Trailers to Play:</value>
         </textarea>
@@ -1536,12 +1549,12 @@
         </checkbox>
 
         <button name="cancel" from="basebutton">
-            <position>438,600</position>
+            <position>438,650</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="basebutton">
-            <position>685,600</position>
+            <position>685,650</position>
             <value>OK</value>
         </button>
 
