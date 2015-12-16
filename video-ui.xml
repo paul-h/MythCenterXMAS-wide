@@ -1226,149 +1226,148 @@
     </window>
 
     <window name="filter">
-
         <textarea name="title" from="basetextarea">
-            <area>20,50,760,40</area>
-            <value>Filters video list</value>
-            <align>hcenter,vcenter</align>
+            <area>15,5,800,50</area>
             <font>baselarge</font>
+            <value>Filters Video List</value>
         </textarea>
+
+        <shape name="background" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
 
         <!-- Labels -->
-        <textarea name="textfilter_text">
-            <area>10,127,250,30</area>
-            <value>Text Filter:</value>
-            <font>basemedium</font>
-            <align>right</align>
+        <textarea name="textfilter_text" from="baselabel">
+            <area>30,137,190,34</area>
+            <value>Text Filter :</value>
         </textarea>
 
-        <textarea name="category_text" from="basetextarea">
-            <area>10,191,140,34</area>
+        <textarea name="category_text" from="baselabel">
+            <area>30,191,190,34</area>
             <value>Category :</value>
-            <align>right,top</align>
         </textarea>
 
         <textarea name="genre_text" from="category_text">
-            <position>10,225</position>
+            <position>30,225</position>
             <value>Genre :</value>
         </textarea>
 
         <textarea name="country_text" from="category_text">
-            <position>10,279</position>
+            <position>30,279</position>
             <value>Country :</value>
         </textarea>
 
         <textarea name="cast_text" from="category_text">
-            <position>10,323</position>
+            <position>30,323</position>
             <value>Actor/Actress :</value>
         </textarea>
 
         <textarea name="year_text" from="category_text">
-            <position>10,367</position>
+            <position>30,367</position>
             <value>Year :</value>
         </textarea>
 
         <textarea name="runtime_text" from="category_text">
-            <position>10,411</position>
+            <position>30,411</position>
             <value>Runtime :</value>
         </textarea>
 
         <textarea name="userrating_text" from="category_text">
-            <position>400,191</position>
+            <position>670,191</position>
             <value>User Rating :</value>
         </textarea>
 
         <textarea name="browse_text" from="category_text">
-            <position>400,235</position>
+            <position>670,235</position>
             <value>Browse :</value>
         </textarea>
 
         <textarea name="inetref_text" from="category_text">
-            <position>400,279</position>
+            <position>670,279</position>
             <value>InetRef :</value>
         </textarea>
 
         <textarea name="coverfile_text" from="category_text">
-            <position>400,323</position>
+            <position>670,323</position>
             <value>Cover File :</value>
         </textarea>
 
         <textarea name="orderby_text" from="category_text">
-            <position>400,367</position>
+            <position>670,367</position>
             <value>Sort by :</value>
         </textarea>
 
         <textarea name="watched_text" from="category_text">
-            <position>400,411</position>
+            <position>670,411</position>
             <value>Watched :</value>
         </textarea>
 
         <!-- Widgets -->
         <textedit name="textfilter_input" from="basetextedit">
-            <position>300,118</position>
+            <position>230,128</position>
         </textedit>
 
-        <buttonlist name="category_select" from="baseselector">
-            <position>160,184</position>
+        <buttonlist name="category_select" from="basemediumselector">
+            <position>230,184</position>
         </buttonlist>
 
-        <buttonlist name="genre_select" from="baseselector">
-            <position>160,228</position>
+        <buttonlist name="genre_select" from="basemediumselector">
+            <position>230,228</position>
         </buttonlist>
 
-        <buttonlist name="country_select" from="baseselector">
-            <position>160,272</position>
+        <buttonlist name="country_select" from="basemediumselector">
+            <position>230,272</position>
         </buttonlist>
 
-        <buttonlist name="cast_select" from="baseselector">
-            <position>160,316</position>
+        <buttonlist name="cast_select" from="basemediumselector">
+            <position>230,316</position>
         </buttonlist>
 
-        <buttonlist name="year_select" from="baseselector">
-            <position>160,360</position>
+        <buttonlist name="year_select" from="basemediumselector">
+            <position>230,360</position>
         </buttonlist>
 
-        <buttonlist name="runtime_select" from="baseselector">
-            <position>160,404</position>
+        <buttonlist name="runtime_select" from="basemediumselector">
+            <position>230,404</position>
         </buttonlist>
 
-        <buttonlist name="userrating_select" from="baseselector">
-            <position>550,184</position>
+        <buttonlist name="userrating_select" from="basemediumselector">
+            <position>870,184</position>
         </buttonlist>
 
-        <buttonlist name="browse_select" from="baseselector">
-            <position>550,228</position>
+        <buttonlist name="browse_select" from="basemediumselector">
+            <position>870,228</position>
         </buttonlist>
 
-        <buttonlist name="inetref_select" from="baseselector">
-            <position>550,272</position>
+        <buttonlist name="inetref_select" from="basemediumselector">
+            <position>870,272</position>
         </buttonlist>
 
-        <buttonlist name="coverfile_select" from="baseselector">
-            <position>550,316</position>
+        <buttonlist name="coverfile_select" from="basemediumselector">
+            <position>870,316</position>
         </buttonlist>
 
-        <buttonlist name="orderby_select" from="baseselector">
-            <position>550,360</position>
+        <buttonlist name="orderby_select" from="basemediumselector">
+            <position>870,360</position>
         </buttonlist>
 
-        <buttonlist name="watched_select" from="baseselector">
-            <position>550,404</position>
+        <buttonlist name="watched_select" from="basemediumselector">
+            <position>870,404</position>
         </buttonlist>
 
-        <textarea name="numvideos_text" from="basetextarea">
-            <area>20,490,760,30</area>
+        <textarea name="numvideos_text" from="baselabel">
+            <area>20,540,1240,30</area>
             <value>Result</value>
             <align>allcenter</align>
         </textarea>
 
         <button name="done_button" from="basebutton">
-            <position>400,545</position>
+            <position>660,645</position>
             <value>Done</value>
         </button>
 
         <button name="save_button" from="basebutton">
-            <position>200,545</position>
+            <position>460,645</position>
             <value>Save as default</value>
         </button>
 
