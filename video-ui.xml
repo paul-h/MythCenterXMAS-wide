@@ -123,8 +123,12 @@
     <!-- Main Windows -->
     <window name="manager">
 
+        <shape name="top_background" from="basebackground">
+            <area>15,15,1250,280</area>
+        </shape>
+
         <statetype name="parentallevel">
-            <position>740,10</position>
+            <position>1210,25</position>
             <state name="None">
                 <imagetype name="icon">
                     <filename>mv_level_none.png</filename>
@@ -152,37 +156,30 @@
             </state>
         </statetype>
 
-        <textarea name="novideos" from="basetextarea">
-            <area>0,110,800,70</area>
-            <multiline>yes</multiline>
-            <align>hcenter,vcenter</align>
-            <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
-        </textarea>
-
         <textarea name="title" from="basetextarea">
-            <area>20,10,710,80</area>
+            <area>70,20,650,40</area>
+            <cutdown>yes</cutdown>
             <font>baselarge</font>
         </textarea>
 
-        <textarea name="dirlbl" from="basetextarea">
-            <area>20,65,130,35</area>
-            <font>basesmall</font>
+        <textarea name="dirlbl" from="baselabel">
+            <area>20,65,230,35</area>
             <align>right,top</align>
             <value>Director:</value>
         </textarea>
 
         <textarea name="director" from="basetextarea">
-            <area>160,65,350,35</area>
-            <font>basesmallyellow</font>
+            <area>260,65,350,35</area>
+            <font>basesmall</font>
         </textarea>
 
         <textarea name="yrlbl" from="dirlbl">
-            <position>500,65</position>
+            <position>810,65</position>
             <value>Year:</value>
         </textarea>
 
         <textarea name="year" from="director">
-            <area>650,65,100,35</area>
+            <area>1050,65,100,35</area>
         </textarea>
 
         <textarea name="ratlbl" from="dirlbl">
@@ -191,16 +188,16 @@
         </textarea>
 
         <textarea name="rating" from="director">
-            <area>160,95,350,35</area>
+            <area>260,95,350,35</area>
         </textarea>
 
         <textarea name="lvllbl" from="dirlbl">
-            <position>500,95</position>
+            <position>810,95</position>
             <value>Parental Level:</value>
         </textarea>
 
         <statetype name="videolevel">
-            <position>645,90</position>
+            <position>1045,90</position>
             <state name="Lowest">
                 <imagetype name="icon">
                     <area>0,2,30,30</area>
@@ -239,13 +236,13 @@
         </statetype>
 
         <textarea name="browselbl" from="dirlbl">
-            <position>500,125</position>
+            <position>810,125</position>
             <value>Browsable:</value>
             <align>right,top</align>
         </textarea>
 
         <textarea name="browseable" from="director">
-            <area>650,125,100,35</area>
+            <area>1050,125,100,35</area>
         </textarea>
 
         <textarea name="lenlbl" from="dirlbl">
@@ -254,7 +251,7 @@
         </textarea>
 
         <textarea name="length" from="director">
-            <area>160,125,350,35</area>
+            <area>260,125,350,35</area>
         </textarea>
 
         <textarea name="desclbl" from="dirlbl">
@@ -263,7 +260,7 @@
         </textarea>
 
         <textarea name="description" from="director">
-            <area>160,155,600,35</area>
+            <area>260,155,990,35</area>
         </textarea>
 
         <textarea name="fillbl" from="dirlbl">
@@ -272,7 +269,7 @@
         </textarea>
 
         <textarea name="filename" from="director">
-            <area>160,185,600,35</area>
+            <area>260,185,990,35</area>
         </textarea>
 
         <textarea name="cvflbl" from="dirlbl">
@@ -281,7 +278,7 @@
         </textarea>
 
         <textarea name="coverfile" from="director">
-            <area>160,215,600,35</area>
+            <area>260,215,990,35</area>
         </textarea>
 
         <textarea name="imdblbl" from="dirlbl">
@@ -290,24 +287,31 @@
         </textarea>
 
         <textarea name="inetref" from="director">
-            <area>160,245,100,35</area>
+            <area>260,245,100,35</area>
         </textarea>
 
-        <imagetype name="menu_background">
-            <position>0,270</position>
-            <filename>cr-background.png</filename>
-        </imagetype>
+        <shape name="list_background" from="basebackground">
+            <area>15,310,1250,400</area>
+        </shape>
 
-        <buttonlist name="videos">
-            <area>20,282,760,242</area>
-            <layout>vertical</layout>
-            <spacing>5</spacing>
-            <buttonarea>0,0,760,250</buttonarea>
+        <textarea name="novideos2" from="basetextarea">
+            <area>215,310,850,400</area>
+            <multiline>yes</multiline>
+            <align>hcenter,vcenter</align>
+            <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
+        </textarea>
+
+        <buttonlist name="videos" from="basebuttonlist3">
+            <area>30,325,1220,370</area>
+            <spacing>0</spacing>
+            <showarrow>no</showarrow>
+            <searchposition>-1,50</searchposition>
+            <buttonarea>0,0,1220,370</buttonarea>
             <statetype name="buttonitem">
-                <area>0,0,760,25</area>
                 <state name="active">
+                    <area>0,0,100%,46</area>
                     <imagetype name="buttonimage">
-                        <area>0,2,25,25</area>
+                        <area>5,5,36,36</area>
                         <preserveaspect>yes</preserveaspect>
                         <filename>shared/grid_noimage.png</filename>
                     </imagetype>
@@ -329,48 +333,37 @@
                         </state>
                     </statetype>
                     <textarea name="buttontext" from="basetextarea">
-                        <area>30,4,250,30</area>
-                        <font>basesmallgrey</font>
+                        <area>50,0,790,46</area>
+                        <align>left,vcenter</align>
+                        <font>basesmall</font>
                     </textarea>
-                    <textarea name="director" from="buttontext">
-                        <area>380,4,150,25</area>
+                    <textarea name="s##e##" from="buttontext">
+                        <area>850,0,100,46</area>
+                    </textarea>
+                    <textarea name="length" from="buttontext">
+                        <area>960,0,150,46</area>
                     </textarea>
                     <textarea name="year" from="buttontext">
-                        <area>670,4,50,25</area>
+                        <align>right,vcenter</align>
+                        <area>1120,0,70,46</area>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
-                    <textarea name="buttontext">
-                        <font>basesmall</font>
-                    </textarea>
-                    <textarea name="director">
-                        <font>basesmall</font>
-                    </textarea>
-                    <textarea name="year">
-                        <font>basesmall</font>
-                    </textarea>
-                </state>
-            </statetype>
-            <statetype name="upscrollarrow">
-                <position>240,270</position>
-                <showempty>yes</showempty>
-                <state type="full">
-                    <imagetype name="upon">
-                        <filename>up_arrow.png</filename>
+                    <imagetype name="buttonimage">
+                        <area>5,5,36,36</area>
+                        <filename>shared/grid_noimage.png</filename>
                     </imagetype>
+                    <shape name="selectbar">
+                        <area>0,0,100%-5,46</area>
+                    </shape>
                 </state>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>456,270</position>
-                <showempty>yes</showempty>
-                <state type="full">
-                    <imagetype name="dnon">
-                        <filename>down_arrow.png</filename>
-                    </imagetype>
+                <state name="selectedinactive" from="active">
+                    <shape name="selectbar">
+                        <area>0,0,100%-5,46</area>
+                    </shape>
                 </state>
             </statetype>
         </buttonlist>
-
     </window>
 
     <window name="browser">
