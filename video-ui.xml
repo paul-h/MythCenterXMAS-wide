@@ -579,30 +579,40 @@
     </window>
 
     <window name="gallery">
+
+        <shape name="browser_background" from="basebackground">
+            <area>15,15,1250,690</area>
+        </shape>
+
         <textarea name="title" from="basetextarea">
-            <area>70,15,420,50</area>
+            <area>70,20,450,50</area>
             <cutdown>yes</cutdown>
             <font>baselarge</font>
         </textarea>
 
         <buttonlist name="videos">
-            <area>12,0,1260,785</area>
+            <area>10,10,1260,785</area>
             <layout>grid</layout>
             <spacing>5</spacing>
-            <buttonarea>0,55,1260,720</buttonarea>
+            <buttonarea>20,55,1240,720</buttonarea>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,175,160</area>
-                    <imagetype name="buttonbackground">
-                        <filename>shared/grid_back_reg.png</filename>
-                    </imagetype>
+                    <area>0,0,185,155</area>
+                    <shape name="buttonbackground">
+                        <area>0,0,199,145</area>
+                        <type>roundbox</type>
+                        <cornerradius>3</cornerradius>
+                        <fill style="gradient">
+                            <gradient start="#ff0000" end="#dd0000" alpha="50"/>
+                        </fill>
+                    </shape>
                     <imagetype name="buttonimage">
-                        <area>10,8,155,125</area>
+                        <area>42,10,114,107</area>
                         <filename>shared/grid_noimage.png</filename>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <statetype name="nodetype">
-                        <position>90,70</position>
+                        <position>110,50</position>
                         <state name="subfolder">
                             <imagetype name="icon">
                                 <area>0,0,70,70</area>
@@ -619,75 +629,81 @@
                         </state>
                     </statetype>
                     <textarea name="buttontext">
-                        <area>5,133,165,25</area>
-                        <font>menufont</font>
+                        <area>5,115,186,30</area>
+                        <font>basesmall</font>
                         <align>hcenter,bottom</align>
                     </textarea>
                     <textarea name="childcount" from="basetextarea">
-                        <area>60,95,80,25</area>
+                        <area>110,50,70,90</area>
                         <font>basesmallblack</font>
-                        <align>right</align>
+                        <align>allcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
-                    <imagetype name="buttonbackground">
-                        <filename>shared/grid_back_sel.png</filename>
+                    <shape name="buttonbackground">
+                        <area>0,0,195,150</area>
+                        <type>roundbox</type>
+                        <cornerradius>3</cornerradius>
+                        <fill style="gradient">
+                            <gradient start="#ff0000" end="#dd0000" alpha="200" />
+                        </fill>
+                    </shape>
+                </state>
+            </statetype>
+            <statetype name="downscrollarrow">
+                <position>1200,12</position>
+                <state type="off">
+                    <imagetype name="dnon">
+                        <filename>down_arrow-reg.png</filename>
+                    </imagetype>
+                </state>
+                <state type="full">
+                    <imagetype name="dnoff">
+                        <filename>down_arrow-sel.png</filename>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>1100,15</position>
-                <showempty>yes</showempty>
-                <state type="full">
+                <position>1170,12</position>
+                <state type="off">
                     <imagetype name="upon">
-                        <filename>up_arrow.png</filename>
+                        <filename>up_arrow-reg.png</filename>
                     </imagetype>
                 </state>
-            </statetype>
-            <statetype name="downscrollarrow">
-                <position>1160,15</position>
-                <showempty>yes</showempty>
                 <state type="full">
-                    <imagetype name="dnon">
-                        <filename>down_arrow.png</filename>
+                    <imagetype name="upoff">
+                        <filename>up_arrow-sel.png</filename>
                     </imagetype>
                 </state>
             </statetype>
         </buttonlist>
-       
+
         <textarea name="subtitle" from="basetextarea">
-            <area>500,15,350,40</area>
+            <area>520,20,370,40</area>
             <align>hcenter,vcenter</align>
             <font>basemedium</font>
         </textarea>
 
         <textarea name="s##e##" from="basetextarea">
-            <area>870,15,100,40</area>
+            <area>890,20,100,40</area>
             <align>hcenter,vcenter</align>
             <font>basemedium</font>
         </textarea>        
 
-        <textarea name="position" from="basetextarea">
-            <area>1000,15,200,40</area>
+        <textarea name="position" from="baselabel">
+            <area>990,20,190,40</area>
             <align>hcenter,vcenter</align>
-            <font>basemedium</font>
         </textarea>
 
         <textarea name="novideos" from="basetextarea">
-            <area>50,50,700,50</area>
+            <area>215,15,850,690</area>
             <multiline>yes</multiline>
             <align>hcenter,vcenter</align>
-            <value>No videos in library, or no files found.  If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
+            <value>No videos in library, or no files found.\n If you have configured a video directory, press "M" (or the MENU key) and select "Scan for Changes."</value>
         </textarea>
 
-        <!-- <textarea name="breadcrumbs" from="basetextarea">
-            <area>500,20,280,30</area>
-            <font>basemedium</font>
-            <align>right,vcenter</align>
-        </textarea> -->
-
         <statetype name="parentallevel">
-            <position>20,10</position>
+            <position>20,20</position>
             <state name="None">
                 <imagetype name="icon">
                     <filename>mv_level_none.png</filename>
