@@ -1535,7 +1535,7 @@
     </window>
 
     <window name="MythArtworkResults">
-        <area>-1,-1,413,426</area>
+        <area>-1,-1,347,660</area>
 
         <animation trigger="AboutToShow">
             <section>
@@ -1551,13 +1551,12 @@
             </section>
         </animation>
 
-        <imagetype name="box">
-            <area>0,0,413,426</area>
-            <filename>mv_results_popup.png</filename>
-        </imagetype>
+        <shape name="backimg" from="basepopupbackground">
+            <area>0,0,100%,100%</area>
+        </shape>
 
         <buttonlist name="results">
-            <area>20,22,363,378</area>
+            <area>15,17,315,640</area>
             <layout>vertical</layout>
             <spacing>5</spacing>
             <wrapstyle>selection</wrapstyle>
@@ -1565,22 +1564,24 @@
             <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active">
-                    <area>0,0,100%,85</area>
+                    <area>0,0,100%,200</area>
                     <shape name="buttonbackground">
                         <area>0,0,100%,100%</area>
+                        <type>roundbox</type>
+                        <cornerradius>3</cornerradius>
                         <fill style="gradient">
-                            <gradient start="#505050" end="#000000" alpha="200" direction="vertical"  />
+                            <gradient start="#ff0000" end="#dd0000" alpha="50"/>
                         </fill>
                     </shape>
                     <imagetype name="buttonimage">
-                        <area>5,2,150,80</area>
+                        <area>5,5,100%-5,100%-30</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="resolution">
-                        <area>160,0,175,85</area>
+                        <area>5,100%-30,100%-5,30</area>
                         <font>basesmall</font>
                         <cutdown>yes</cutdown>
-                        <align>left,vcenter</align>
+                        <align>allcenter</align>
                     </textarea>
                 </state>
                 <state name="selectedactive" from="active">
