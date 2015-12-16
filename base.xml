@@ -495,6 +495,73 @@
         </scrollbar>
     </buttonlist>
 
+    <!-- Base definition of a simple buttonlist with a scrollbar -->
+    <buttonlist name="basebuttonlist4">
+        <area>0,0,1180,380</area>
+        <layout>vertical</layout>
+        <spacing>4</spacing>
+        <wrapstyle>selection</wrapstyle>
+        <buttonarea>0,0,100%-14,100%</buttonarea>
+        <statetype name="buttonitem">
+            <state name="active">
+                <area>0,0,1160,26</area>
+                <textarea name="buttontext">
+                    <area>10,2,100%-10,100%</area>
+                    <font>basesmall_normal</font>
+                    <font state="disabled">basesmall_disabled</font>
+                    <font state="error">basesmall_error</font>
+                    <font state="warning">basesmall_warning</font>
+                    <font state="normal">basesmall_normal</font>
+                    <font state="running">basesmall_running</font>
+                    <align>vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedactive">
+                <area>0,0,1160,26</area>
+                <shape name="selectbar">
+                    <area>0,0,100%,30</area>
+                    <type>roundbox</type>
+                    <line color="#ff0000" alpha="255" width="1" />
+                    <fill color="#ff0000" alpha="128" />
+                    <cornerradius>4</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <area>10,2,100%-10,100%</area>
+                    <font>base_normal_selected</font>
+                    <font state="disabled">basesmall_disabled_selected</font>
+                    <font state="error">basesmall_error_selected</font>
+                    <font state="warning">basesmall_warning_selected</font>
+                    <font state="normal">basesmall_normal_selected</font>
+                    <font state="running">basesmall_running_selected</font>
+                    <align>vcenter</align>
+                </textarea>
+            </state>
+            <state name="selectedinactive" >
+                <area>0,0,1160,26</area>
+                <shape name="selectbar">
+                    <area>0,0,100%,30</area>
+                    <type>roundbox</type>
+                    <line color="#ff0000" alpha="100" width="1" />
+                    <fill color="#dd0000" alpha="50" />
+                    <cornerradius>4</cornerradius>
+                </shape>
+                <textarea name="buttontext">
+                    <area>10,2,100%-10,100%</area>
+                    <font>base_normal_selected</font>
+                    <font state="disabled">basesmall_disabled_selected</font>
+                    <font state="error">basesmall_error_selected</font>
+                    <font state="warning">basesmall_warning_selected</font>
+                    <font state="normal">basesmall_normal_selected</font>
+                    <font state="running">basesmall_running_selected</font>
+                    <align>vcenter</align>
+                </textarea>
+            </state>
+        </statetype>
+        <scrollbar name="scrollbar" from="basevertscrollbar">
+            <area>100%-14,0,14,100%</area>
+        </scrollbar>
+    </buttonlist>
+
     <!-- Base definition of a button -->
     <button name="basebutton">
         <area>0,0,154,44</area>

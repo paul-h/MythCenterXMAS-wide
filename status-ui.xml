@@ -15,10 +15,10 @@
         </shape>
 
         <buttonlist name="category">
-            <area>70,44,1250,44</area>
+            <area>30,44,1220,44</area>
             <layout>horizontal</layout>
             <spacing>6</spacing>
-            <buttonarea>24,0,1220,44</buttonarea>
+            <buttonarea>60,0,1200,44</buttonarea>
             <triggerevent context="Global" action="ESCAPE">UP</triggerevent>
             <statetype name="buttonitem">
                 <state name="active">
@@ -40,46 +40,51 @@
                 </state>
             </statetype>
             <statetype name="downscrollarrow">
-                <position>1134,12</position>
+                <position>1174,8</position>
                 <state type="off">
                     <imagetype name="dnon">
-                        <filename>lb-rtarrow-reg.png</filename>
+                        <filename>right_arrow-reg.png</filename>
                     </imagetype>
                 </state>
                 <state type="full">
                     <imagetype name="dnoff">
-                        <filename>lb-rtarrow-sel.png</filename>
+                        <filename>right_arrow-sel.png</filename>
                     </imagetype>
                 </state>
             </statetype>
             <statetype name="upscrollarrow">
-                <position>-2,12</position>
+                <position>10,8</position>
                 <state type="off">
                     <imagetype name="upon">
-                        <filename>lb-ltarrow-reg.png</filename>
+                        <filename>left_arrow-reg.png</filename>
                     </imagetype>
                 </state>
                 <state type="full">
                     <imagetype name="upoff">
-                        <filename>lb-ltarrow-sel.png</filename>
+                        <filename>left_arrow-sel.png</filename>
                     </imagetype>
                 </state>
             </statetype>
         </buttonlist>
 
-        <buttonlist name="log" from="basebuttonlist2">
-            <position>18,108</position>
+        <buttonlist name="log" from="basebuttonlist4">
+            <area>50,108,1180,360</area>
+            <buttonarea>0,0,100%-30,100%</buttonarea>
             <searchposition>-1,490</searchposition>
         </buttonlist>
 
+        <shape name="details_background" from="basebackground">
+            <area>30,500,1220,190</area>
+        </shape>
+
         <textarea name="helplabel">
-            <area>30,490,740,30</area>
+            <area>40,510,740,30</area>
             <value>Details</value>
-            <font>basemedium</font>
+            <font>small_label</font>
         </textarea>
 
         <textarea name="helptext" from="basetextarea">
-            <area>40,530,1200,150</area>
+            <area>50,550,1180,130</area>
             <value>This screen displays the status of various system components</value>
             <multiline>yes</multiline>
         </textarea>
