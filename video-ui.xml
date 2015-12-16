@@ -294,7 +294,7 @@
             <area>15,310,1250,400</area>
         </shape>
 
-        <textarea name="novideos2" from="basetextarea">
+        <textarea name="novideos" from="basetextarea">
             <area>215,310,850,400</area>
             <multiline>yes</multiline>
             <align>hcenter,vcenter</align>
