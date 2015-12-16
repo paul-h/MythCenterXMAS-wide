@@ -74,3 +74,5 @@ Updates:
   - Theme the "MythArtworkResults" image search popup
   - Theme the "itemdetailpopup" video details popup
   - Theme the "descriptionpopup" video plot popup
+  - Theme the video Player, Metadata and File Type settings screens
+  
