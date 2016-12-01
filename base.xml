@@ -5,7 +5,7 @@
     <!-- Base Font Definitions -->
     <fontdef name="basesmall" face="Droid Sans">
         <pixelsize>22</pixelsize>
-        <color>#00ff00</color>
+        <color>#24E024</color>
         <weight>bold</weight>
     </fontdef>
 
@@ -97,7 +97,7 @@
         <color>#b0b0b0</color>
     </fontdef>
     <fontdef name="basesmall_running_selected" from="basesmallbold">
-        <color>#00FF00</color>
+        <color>#24E024</color>
     </fontdef>
     <fontdef name="basesmall_running" from="basesmall">
         <color>#00DD00</color>
@@ -131,7 +131,7 @@
         <color>#00aa00</color>
     </fontdef>
     <fontdef name="basemedium_selected_button" from="basemediumbold">
-        <color>#00ff00</color>
+        <color>#24E024</color>
     </fontdef>
     <fontdef name="basemedium_disabled_button" from="basemediumbold">
         <color>#9999cc</color>

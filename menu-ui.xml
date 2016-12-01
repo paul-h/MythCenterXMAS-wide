@@ -6,7 +6,7 @@
     <window name="mainmenu">
 
         <fontdef name="menufont" face="Liberation Sans">
-            <color>#00ff00</color>
+            <color>#24E024</color>
             <pixelsize>30</pixelsize>
             <weight>bold</weight>
             <shadowcolor>#000000</shadowcolor>
