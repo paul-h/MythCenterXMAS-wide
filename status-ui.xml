@@ -195,7 +195,7 @@
                 <area>20,210,1240,50</area>
                 <font>small</font>
                 <value>There are no recordings currently taking place</value>
-                <align>allcenter</align>
+                <align>top,hcenter</align>
             </textarea>
 
             <buttonlist name="currentrecording">
@@ -233,9 +233,9 @@
 
             <textarea name="nothingscheduled" depends="!nextrecording">
                 <area>20,380,1240,50</area>
-                <font>info</font>
+                <font>small</font>
                 <value>There are no scheduled recordings</value>
-                <align>allcenter</align>
+                <align>top,hcenter</align>
             </textarea>
 
             <buttonlist name="nextrecording" from="currentrecording">
