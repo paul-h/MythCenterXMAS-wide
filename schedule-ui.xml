@@ -1178,6 +1178,74 @@
         </webbrowser>
     </window>
 
+    <window name="programdetails">
+
+        <textarea name="title" from="basetextarea">
+            <area>15,5,800,50</area>
+            <font>baselarge</font>
+            <value>Program Details</value>
+        </textarea>
+
+        <shape name="background" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
+
+        <buttonlist name="infolist" >
+            <arrange>stack</arrange>
+            <align>top</align>
+            <area>40,70,-40,-30</area>
+            <layout>vertical</layout>
+            <spacing>5</spacing>
+            <buttonarea>20,0,-25,100%</buttonarea>
+
+            <statetype name="buttonitem">
+                <area>0,0,100%,240</area>
+                <minsize shrink="short">100%,5</minsize>
+
+                <state name="active">
+                    <area>0,0,100%,100%</area>
+                    <minsize shrink="short">100%,6</minsize>
+                    <shape name="background">
+                        <!-- work around a stack / minsize display bug by using
+                             empty image to help spacing -->
+                        <area>0,0,100%,100%</area>
+                        <minsize shrink="short">100%,5</minsize>
+                    </shape>
+                    <textarea name="name" from="basetextarea">
+                        <area>5,3,15%,-3</area>
+                        <minsize shrink="short">100%,5</minsize>
+                        <multiline>yes</multiline>
+                        <cutdown>no</cutdown>
+                        <align>top,right</align>
+                        <font>basesmallyellow</font>
+                    </textarea>
+                    <textarea name="sep">
+                        <area>16%,3,10,-3</area>
+                        <minsize shrink="short">100%,5</minsize>
+                        <align>top,left</align>
+                        <value>:</value>
+                        <font>basesmallyellow</font>
+                    </textarea>
+                    <textarea name="value">
+                        <area>16%+15,3,-10,-3</area>
+                        <minsize shrink="short">100%,5</minsize>
+                        <multiline>yes</multiline>
+                        <cutdown>no</cutdown>
+                        <align>top,left</align>
+                        <font>basesmall</font>
+                    </textarea>
+                </state>
+                <state name="selectedactive" from="active" />
+                <state name="selectedinactive" from="active" />
+            </statetype>
+
+            <scrollbar name="scrollbar" from="basevertscrollbar">
+                <area>100%-14,0,14,100%</area>
+            </scrollbar>
+
+         </buttonlist>
+    </window>
+
     <window name="searchpopup" from="MythTextInputDialog">
         <area>-1,10,580,166</area>
 
