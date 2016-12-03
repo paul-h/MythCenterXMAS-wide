@@ -886,6 +886,152 @@
         </textarea>
     </group>
 
+    <!-- A gallery button showing a picture, video or folder -->
+    <group name="galleryactivebutton">
+        <area>0,0,100%,100%</area>
+        <!-- Show a background image depending on node type -->
+        <statetype name="buttontype">
+            <area>0,0,100%,100%</area>
+            <state name="subfolder">
+                <area>0,0,100%,100%</area>
+                <imagetype name="background">
+                    <area>0,0,100%,100%</area>
+                    <filename>shared/folder-reg.png</filename>
+                </imagetype>
+            </state>
+            <state name="device" from="subfolder"/>
+            <state name="image">
+                <area>0,0,100%,100%</area>
+                <imagetype name="background">
+                    <area>0,0,100%,100%</area>
+                    <filename>shared/grid_back_reg.png</filename>
+                    <alpha>64</alpha>
+                </imagetype>
+            </state>
+            <state name="video">
+                <area>0,0,100%,100%</area>
+                <imagetype name="background">
+                    <area>0,0,100%,100%</area>
+                    <filename>shared/movie-reg.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <!-- Show how many images / directories are in this directory -->
+        <textarea name="childcount" from="basetextarea">
+            <area>5%,0,100%,15%</area>
+            <font>basesmaller</font>
+            <align>left,vcenter</align>
+        </textarea>
+        <!-- Shows a picture image -->
+        <imagetype name="buttonimage">
+            <area>2%,2%,98%,98%</area>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
+        <!-- Shows a single folder image -->
+        <imagetype name="folderimage">
+            <area>4%,15%,97%,98%</area>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
+        <!-- Shows a video image -->
+        <imagetype name="videoimage">
+            <area>4%,10%,97%,90%</area>
+            <preserveaspect>yes</preserveaspect>
+        </imagetype>
+        <!-- Shows 4 images for default folder -->
+        <imagetype name="thumbimage0">
+            <area>4%,15%,47%,47%</area>
+            <preserveaspect>true</preserveaspect>
+        </imagetype>
+        <imagetype name="thumbimage1" from="thumbimage0">
+            <area>51%,15%,92%,47%</area>
+        </imagetype>
+        <imagetype name="thumbimage2" from="thumbimage0">
+            <area>4%,57%,47%,93%</area>
+        </imagetype>
+        <imagetype name="thumbimage3" from="thumbimage0">
+            <area>51%,57%,92%,93%</area>
+        </imagetype>
+        <!-- Show up arrow on parent dir with ancestors -->
+        <statetype name="parenttype">
+            <area>0,0,100%,100%</area>
+            <state name="upfolder">
+                <area>0,0,100%,100%</area>
+                <imagetype name="icon">
+                    <area>4%,14%,20%,10%</area>
+                    <filename>uparrow.png</filename>
+                    <preserveaspect>no</preserveaspect>
+                    <alpha>208</alpha>
+                </imagetype>
+            </state>
+        </statetype>
+        <!-- Darken hidden files/ folders -->
+        <statetype name="buttonstate">
+            <area>0,0,100%,100%</area>
+            <state name="visible"/>
+            <state name="hidden">
+                <area>0,0,100%,100%</area>
+                <shape name="hidden_background_shape">
+                    <area>0,0,100%,100%</area>
+                    <type>box</type>
+                    <fill color="#000000" alpha="128"/>
+                </shape>
+            </state>
+        </statetype>
+        <!-- Shows that the image was marked/selected and
+        might be manipulated with other images -->
+        <statetype name="buttoncheck">
+            <area>0,0,100%,100%</area>
+            <state type="full">
+                <area>42%,49%,26%,26%</area>
+                <shape name="marked_background">
+                    <area>0,0,100%,100%</area>
+                    <type>ellipse</type>
+                    <fill color="#000000"/>
+                </shape>
+                <imagetype name="marked">
+                    <area>0,0,100%,100%</area>
+                    <filename>schedule_recording.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+        <textarea name="buttontext">
+            <area>2%,100%-22,99%,22</area>
+            <font>basesmaller</font>
+            <align>allcenter</align>
+        </textarea>
+    </group>
+
+    <!-- A selected gallery button of a picture, video or folder -->
+    <group name="galleryselectedbutton" from="galleryactivebutton">
+        <area>0,0,100%,100%</area>
+        <statetype name="buttontype">
+            <area>0,0,100%,100%</area>
+            <state name="subfolder">
+                <area>0,0,100%,100%</area>
+                <imagetype name="background">
+                    <area>0,0,100%,100%</area>
+                    <filename>shared/folder-sel.png</filename>
+                </imagetype>
+            </state>
+            <state name="device" from="subfolder"/>
+            <state name="image">
+                <area>0,0,100%,100%</area>
+                <imagetype name="background">
+                    <area>0,0,100%,100%</area>
+                    <filename>shared/grid_back_sel.png</filename>
+                    <alpha>255</alpha>
+                </imagetype>
+            </state>
+            <state name="video">
+                <area>0,0,100%,100%</area>
+                <imagetype name="background">
+                    <area>0,0,100%,100%</area>
+                    <filename>shared/movie-sel.png</filename>
+                </imagetype>
+            </state>
+        </statetype>
+    </group>
+
     <!-- Popup Dialogue Box -->
     <window name="MythPopupBox">
         <area>-1,-1,500,500</area>
