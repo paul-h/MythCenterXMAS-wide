@@ -90,3 +90,4 @@ Updates:
   - Theme the System Event Command Editor screen
   - Theme the music settings screens
   - Theme the key binding editor screens
+  - Theme the weather settings screens

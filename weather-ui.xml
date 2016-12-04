@@ -683,23 +683,27 @@
 
     <window name="global-setup">
 
-        <textarea name="header" from="basetextarea">
-            <area>0,18,1280,45</area>
-            <font>baselarge</font>
+        <textarea name="title" from="basetextarea">
+            <area>30,10,570,40</area>
             <value>Global Settings</value>
-            <align>allcenter</align>
+            <font>baselarge</font>
         </textarea>
 
+        <shape name="background" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
+
         <textarea name="timeout_text" from="basetextarea">
-            <area>225,105,400,60</area>
+            <area>225,205,400,60</area>
+            <font>small_label</font>
             <value>Seconds to display each page:</value>
         </textarea>
 
         <spinbox name="timeout_spinbox" from="basespinbox">
-            <position>800,105</position>
+            <position>800,205</position>
         </spinbox>
 
-        <textarea name="backgroundlbl" from="basetextarea">
+        <textarea name="backgroundlbl" from="timeout_text">
             <area>225,270,500,60</area>
             <value>Retrieve data in the background:</value>
         </textarea>
@@ -709,23 +713,26 @@
         </checkbox>
 
         <button name="finishbutton" from="basebutton">
-            <position>900,660</position>
+            <position>900,640</position>
         </button>
 
     </window>
 
     <window name="screen-setup">
 
-        <textarea name="header">
-            <area>0,15,1280,45</area>
-            <font>baselarge</font>
+         <textarea name="title" from="basetextarea">
+            <area>30,10,570,40</area>
             <value>Screen Setup</value>
-            <align>allcenter</align>
+            <font>baselarge</font>
         </textarea>
+
+        <shape name="background" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
 
         <textarea name="inactivehdr" from="basetextarea">
             <area>150,135,400,30</area>
-            <font>basemedium</font>
+            <font>small_label</font>
             <align>allcenter</align>
         </textarea>
 
@@ -748,19 +755,22 @@
         </textarea>
 
         <button name="finishbutton" from="basebutton">
-            <position>900,660</position>
+            <position>900,640</position>
         </button>
 
     </window>
 
     <window name="source-setup">
 
-        <textarea name="header">
-            <area>0,15,1280,45</area>
-            <font>baselarge</font>
+        <textarea name="title" from="basetextarea">
+            <area>30,10,570,40</area>
             <value>Source Setup</value>
-            <align>allcenter</align>
+            <font>baselarge</font>
         </textarea>
+
+        <shape name="background" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
 
         <buttonlist name="srclist" from="basebuttonlist">
             <area>130,100,420,300</area>
@@ -774,11 +784,12 @@
 
         <textarea name="updatetxt" from="basetextarea">
             <area>690,150,300,60</area>
+            <font>small_label</font>
             <multiline>yes</multiline>
             <value>Data Retrieval Interval (minutes):</value>
         </textarea>
 
-        <textarea name="retrievetxt" from="basetextarea">
+        <textarea name="retrievetxt" from="updatetxt">
             <area>690,260,300,60</area>
             <multiline>yes</multiline>
             <value>Source Update Timeout (seconds):</value>
@@ -798,52 +809,56 @@
         </textarea>
 
         <button name="finishbutton" from="basebutton">
-            <position>900,660</position>
+            <position>900,640</position>
         </button>
     </window>
 
     <window name="setup-location">
 
-        <textarea name="header" from="basetextarea">
-            <area>0,15,800,40</area>
+        <textarea name="title" from="basetextarea">
+            <area>30,10,570,40</area>
             <value>Location Search</value>
             <font>baselarge</font>
-            <align>allcenter</align>
         </textarea>
 
+        <shape name="background" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
+
         <textarea name="helptxt" from="basetextarea">
-            <area>0,50,800,60</area>
+            <area>200,60,800,60</area>
             <value>Enter your current location, nearest large town or city. In some countries postal codes are also supported.</value>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <textarea name="editlbl" from="basetextarea">
-            <area>25,115,170,40</area>
+            <area>25,150,170,40</area>
+            <font>small_label</font>
             <value>Enter Location:</value>
             <align>right,top</align>
         </textarea>
 
         <textedit name="loc-edit" from="basetextedit">
-            <position>215,110</position>
+            <position>215,140</position>
         </textedit>
 
         <button name="searchbtn" from="basebutton">
-            <position>610,120</position>
+            <position>610,145</position>
         </button>
 
         <buttonlist name="results" from="basebuttonlist">
-            <area>25,190,700,380</area>
+            <area>50,230,1180,400</area>
         </buttonlist>
 
-        <textarea name="numresults" from="basetextarea">
-            <area>200,550,400,40</area>
-            <align>allcenter</align>
+        <textarea name="numresults" from="editlbl">
+            <area>200,650,400,40</area>
+            <align>right</align>
         </textarea>
 
         <textarea name="source" from="basetextarea">
-            <area>600,550,200,40</area>
-            <align>allcenter</align>
+            <area>620,650,500,40</area>
+            <align>left</align>
         </textarea>
 
     </window>
