@@ -87,3 +87,4 @@ Updates:
   - Theme the Configuration Wizard screens
   - Theme the Theme Chooser screen
   - Tidy up the Artwork and Metadata Sources screen
+  - Theme the System Event Command Editor screen
