@@ -76,3 +76,13 @@ Updates:
   - Theme the "descriptionpopup" video plot popup
   - Theme the video Player, Metadata and File Type settings screens
   - Theme the video 'manager' screen
+* 04/12/16 - 1.5
+  - Tone down the green font color slightly
+  - Tidy up the standby screen
+  - Add some new background images
+  - Update the radio stream editor and stream finder screens
+  - Add the new "programdetails" screen
+  - Add the new image gallery screens
+  - Theme all the MythNetVision screens
+  - Theme the Configuration Wizard screens
+  - Theme the Theme Chooser screen
