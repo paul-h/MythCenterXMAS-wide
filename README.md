@@ -89,3 +89,4 @@ Updates:
   - Tidy up the Artwork and Metadata Sources screen
   - Theme the System Event Command Editor screen
   - Theme the music settings screens
+  - Theme the key binding editor screens
