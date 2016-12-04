@@ -4,9 +4,23 @@
 
     <window name="keygrabpopup">
         <area>390,150,500,500</area>
-        <imagetype name="backimg">
-            <filename>mythdialogbox-background.png</filename>
-        </imagetype>
+        <animation trigger="AboutToShow">
+            <section>
+                <alpha start="0" end="255" easingcurve="OutQuart"/>
+                <zoom start="0" end="100" easingcurve="OutQuart"/>
+            </section>
+        </animation>
+
+        <animation trigger="AboutToHide">
+            <section>
+                <alpha start="255" end="0" easingcurve="InQuart"/>
+                <zoom start="100" end="0" easingcurve="InQuart"/>
+            </section>
+        </animation>
+
+        <shape name="backimg" from="basepopupbackground">
+            <area>0,0,100%,100%</area>
+        </shape>
 
         <textarea name="message" from="basetextarea">
             <area>18,18,460,400</area>
@@ -26,44 +40,55 @@
 
     <window name="controls">
 
+        <textarea name="title" from="basetextarea">
+            <area>30,10,570,40</area>
+            <value>Key Bindings Editor</value>
+            <font>baselarge</font>
+        </textarea>
+
+        <shape name="background" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
+
         <textarea name="leftdesc" from="basetextarea">
-            <area>64,46,560,30</area>
+            <area>64,56,560,30</area>
+            <font>small_label</font>
             <value>Contexts</value>
             <align>center</align>
         </textarea>
 
         <buttonlist name="leftlist" from="basebuttonlist">
-            <area>64,86,560,440</area>
+            <area>64,96,560,470</area>
             <showarrow>no</showarrow>
         </buttonlist>
 
         <textarea name="rightdesc" from="leftdesc">
-            <area>656,46,560,30</area>
+            <area>656,56,560,30</area>
             <value>Actions</value>
         </textarea>
 
         <buttonlist name="rightlist" from="leftlist">
-            <area>656,86,560,440</area>
+            <area>656,96,560,470</area>
         </buttonlist>
 
         <button name="action_0" from="basebutton">
-            <position>274,560</position>
+            <position>274,590</position>
         </button>
 
         <button name="action_1" from="action_0">
-            <position>464,560</position>
+            <position>464,590</position>
         </button>
 
         <button name="action_2" from="action_0">
-            <position>654,560</position>
+            <position>654,590</position>
         </button>
 
         <button name="action_3" from="action_0">
-            <position>844,560</position>
+            <position>844,590</position>
         </button>
 
         <textarea name="description" from="basetextarea">
-            <area>64,600,1152,90</area>
+            <area>64,650,1152,50</area>
             <multiline>yes</multiline>
             <align>center</align>
         </textarea>
