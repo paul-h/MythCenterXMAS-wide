@@ -4,58 +4,47 @@
 
     <window name="rawsettingseditor">
         <textarea name="heading" from="basetextarea">
-            <area>20,20,1240,40</area>
-            <align>allcenter</align>
+            <area>40,10,1200,40</area>
             <font>baselarge</font>
         </textarea>
 
+        <shape name="screenbackground" from="basebackground">
+            <area>15,50,1250,655</area>
+        </shape>
+
         <buttonlist name="settings" from="basebuttonlist">
-            <area>20,80,400,400</area>
+            <area>330,80,600,400</area>
             <layout>vertical</layout>
             <spacing>4</spacing>
             <scrollstyle>free</scrollstyle>
             <wrapstyle>none</wrapstyle>
-            <buttonarea>0,0,400,380</buttonarea>
+            <buttonarea>0,0,600,380</buttonarea>
         </buttonlist>
 
         <shape name="label-shape">
-            <area>20,500,400,30</area>
+            <area>80,500,1120,50</area>
             <type>roundbox</type>
-            <fill color="#000000" alpha="130" />
+            <fill color="#000000" alpha="80" />
             <cornerradius>4</cornerradius>
         </shape>
 
         <textarea name="label-text">
-            <area>24,500,392,30</area>
+            <area>85,500,1110,50</area>
             <font>basesmall</font>
             <align>left,vcenter</align>
         </textarea>
 
-        <shape name="background">
-            <area>428,500,830,30</area>
-            <type>roundbox</type>
-            <fill color="#FFFFFF" />
-            <cornerradius>4</cornerradius>
-        </shape>
-
-        <textedit name="settingvalue">
-            <area>428,500,830,30</area>
-            <imagetype name="cursor">
-                <filename>cursor.png</filename>
-            </imagetype>
-            <textarea name="text">
-                <area>4,0,820,30</area>
-                <font>basesmall_textedit</font>
-            </textarea>
+        <textedit name="settingvalue" from ="basetextedit">
+            <area>80,560,1120,50</area>
         </textedit>
 
         <button name="cancel" from="basebutton">
-            <position>20,660</position>
+            <position>448,630</position>
             <value>Cancel</value>
         </button>
 
         <button name="save" from="basebutton">
-            <position>1110,660</position>
+            <position>705,630</position>
             <value>Save</value>
         </button>
 
