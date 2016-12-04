@@ -86,3 +86,4 @@ Updates:
   - Theme all the MythNetVision screens
   - Theme the Configuration Wizard screens
   - Theme the Theme Chooser screen
+  - Tidy up the Artwork and Metadata Sources screen
