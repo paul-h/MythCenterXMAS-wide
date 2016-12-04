@@ -88,3 +88,4 @@ Updates:
   - Theme the Theme Chooser screen
   - Tidy up the Artwork and Metadata Sources screen
   - Theme the System Event Command Editor screen
+  - Theme the music settings screens
