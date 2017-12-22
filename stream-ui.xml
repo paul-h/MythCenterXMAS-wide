@@ -173,7 +173,7 @@
         <textarea name="channel" from="basetextarea">
             <area>230,560,900,34</area>
             <font>basemedium</font>
-            <template>%BROADCASTER% - %CHANNEL%</template>
+            <template>%BROADCASTER| - %%CHANNEL%</template>
         </textarea>
 
         <textarea name="url" from="basetextarea">
