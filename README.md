@@ -91,3 +91,7 @@ Updates:
   - Theme the music settings screens
   - Theme the key binding editor screens
   - Theme the weather settings screens
+* 23/12/17 - 1.6
+  - Add some new backgrounds and remove old ones
+  - Fix display issue when playing radio streams with no broadcaster
+  - start to theme the new settings screens
