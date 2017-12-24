@@ -95,3 +95,6 @@ Updates:
   - Add some new backgrounds and remove old ones
   - Fix display issue when playing radio streams with no broadcaster
   - start to theme the new settings screens
+* 24/12/17 - 1.7
+  - Convert the png backgrounds to jpgs otherwise MythUImage gets confused
+  - Theme the channel editor screen
