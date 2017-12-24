@@ -112,88 +112,103 @@
         </textarea>
 
         <shape name="list_background" from="basebackground">
-            <area>15,40,1190,360</area>
+            <area>20,40,1240,370</area>
         </shape>
 
         <shape name="channum_column">
-            <area>51,42,80,356</area>
-            <fill color="#333333" alpha="180" />
+            <area>51,52,80,346</area>
+            <fill color="#aa0000" alpha="100" />
         </shape>
 
         <shape name="sourcename_background">
-            <area>855,42,290,356</area>
-            <fill color="#333333" alpha="180" />
+            <area>855,52,290,346</area>
+            <fill color="#aa0000" alpha="100" />
         </shape>
 
-        <buttonlist name="channels" from="basebuttonlist2">
-            <position>19,50</position>
+        <buttonlist name="channels" from="basebuttonlist3">
+            <area>30,50,1220,350</area>
             <statetype name="buttonitem">
                 <state name="active">
-                    <imagetype name="icon">
-                        <area>1125,0,60,25</area>
+                    <area>0,0,1220,40</area>
+                     <imagetype name="icon">
+                        <area>1125,3,60,100%-6</area>
                         <preserveaspect>true</preserveaspect>
                     </imagetype>
                     <textarea name="channum" from="buttontext">
-                        <area>32,1,80,24</area>
-                        <align>center</align>
+                        <area>21,1,80,100%</area>
+                        <align>allcenter</align>
                     </textarea>
                     <textarea name="name" from="buttontext">
-                        <area>120,1,740,24</area>
+                        <area>120,1,740,100%</area>
+                        <align>left,vcenter</align>
                     </textarea>
                     <textarea name="sourcename" from="name">
-                        <area>860,1,275,24</area>
+                        <area>840,1,275,100%</area>
+                        <align>left,vcenter</align>
                     </textarea>
                 </state>
-                <state name="selectedactive" from="active" />
-                <state name="selectedinactive" from="active" />
+                <state name="selectedactive" from="active">
+                    <shape name="selectbar">
+                        <area>0,0,100%-20,100%</area>
+                    </shape>
+                </state>
+                <state name="selectedinactive" from="active">
+                    <shape name="selectbar">
+                        <area>0,0,100%-20,100%</area>
+                    </shape>
+                </state>
             </statetype>
         </buttonlist>
 
+        <shape name="list_background2" from="basebackground">
+            <area>20,420,1240,280</area>
+        </shape>
+
         <textarea name="sortlabel" from="basetextarea">
-            <area>30,420,220,30</area>
+            <area>70,440,220,30</area>
             <value>Sort Mode:</value>
             <font>basemedium</font>
         </textarea>
 
         <buttonlist name="sorting" from="basewideselector">
-            <position>260,415</position>
+            <position>300,435</position>
         </buttonlist>
 
         <textarea name="sourcelabel" from="sortlabel">
-            <position>30,480</position>
+            <position>70,500</position>
             <value>Video Source:</value>
         </textarea>
 
         <buttonlist name="source" from="basewideselector">
-            <position>260,475</position>
+            <position>300,495</position>
         </buttonlist>
 
         <button name="delete" from="basebutton">
-            <position>760,475</position>
+            <position>1000,495</position>
             <value>Delete</value>
         </button>
 
         <textarea name="nochannumlabel" from="basetextarea">
-            <area>70,537,500,60</area>
+            <area>110,557,500,60</area>
             <value>Hide Channels without channel number.</value>
         </textarea>
 
         <checkbox name="nochannum" from="basecheckbox">
-            <position>30,535</position>
+            <position>70,555</position>
         </checkbox>
 
         <button name="scan" from="basewidebutton">
-            <position>90,605</position>
+            <position>90,635</position>
             <value>Channel Scan</value>
         </button>
 
         <button name="importicons" from="basewidebutton">
-            <position>490,605</position>
+            <position>490,635</position>
             <value>Icon Download</value>
         </button>
 
         <button name="edittransport" from="basewidebutton">
-            <position>890,605</position>
+            <position>890,635</position>
             <value>Edit Transports</value>
         </button>
 
