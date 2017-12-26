@@ -98,3 +98,4 @@ Updates:
 * 24/12/17 - 1.7
   - Convert the png backgrounds to jpgs otherwise MythUImage gets confused
   - Theme the channel editor screen
+  - In the OSD only show the callsign if the channel icon is missing
