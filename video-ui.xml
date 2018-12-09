@@ -381,6 +381,7 @@
             <area>15,505,1250,190</area>
             <layout>horizontal</layout>
             <scrollstyle>center</scrollstyle>
+            <wrapstyle>selection</wrapstyle>
             <spacing>35</spacing>
             <buttonarea>40,0,1170,190</buttonarea>
             <statetype name="buttonitem">
@@ -577,6 +578,7 @@
         <buttonlist name="videos">
             <area>10,10,1260,785</area>
             <layout>grid</layout>
+            <wrapstyle>selection</wrapstyle>
             <spacing>5</spacing>
             <buttonarea>20,55,1240,720</buttonarea>
             <statetype name="buttonitem">
