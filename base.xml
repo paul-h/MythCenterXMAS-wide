@@ -1055,14 +1055,19 @@
             <area>0,0,100%,100%</area>
         </shape>
 
+        <imagetype name="headerimg">
+            <area>20,5,460,75</area>
+            <filename>ui/divider.gif</filename>
+        </imagetype>
+
         <textarea name="messagearea" from="basetextarea">
-            <area>12,14,470,210</area>
+            <area>12,80,475,142</area>
             <multiline>yes</multiline>
             <align>allcenter</align>
         </textarea>
 
         <buttonlist name="list" from="basebuttonlist">
-            <area>12,224,470,250</area>
+            <area>12,224,475,250</area>
             <drawfrombottom>yes</drawfrombottom>
             <showarrow>no</showarrow>
             <wrapstyle>selection</wrapstyle>
