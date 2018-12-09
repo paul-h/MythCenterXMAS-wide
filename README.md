@@ -101,3 +101,8 @@ Updates:
   - In the OSD only show the callsign if the channel icon is missing
 * 01/12/18 - 1.8
   - Replace all the background images with new ones for 2019
+* 09/12/18 - 1.9
+  - Change the wrapstyle in the video lists to wrap around at the top/bottom
+  - Make the watch recordings screen consistent with upstream MythCenter-wide
+  - Add animated header image to the popup menu
+  - Replace one of the background images
