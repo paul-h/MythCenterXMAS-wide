@@ -39,6 +39,7 @@
             <align>top,hcenter</align>
             <spacing>0</spacing>
             <scrollstyle>free</scrollstyle>
+            <focusorder>2</focusorder>
             <wrapstyle>items</wrapstyle>
             <layout>horizontal</layout>
 
@@ -78,7 +79,13 @@
                     </group>
                 </state>
 
-                <state name="selectedactive" from="selectedinactive" />
+                <state name="selectedactive" from="selectedinactive">
+                    <group name="areagroup">
+                        <shape name="recGroupShape">
+                            <line color="#ffff00" width="3" alpha="255" />
+                        </shape>
+                    </group>
+                </state>
 
                 <state name="inactive" from="selectedinactive">
                     <area>0,0,100%,100%</area>
@@ -96,7 +103,13 @@
                     </group>
                 </state>
 
-                <state name="active" from="inactive" />
+                <state name="active" from="selectedinactive">
+                    <group name="areagroup">
+                        <shape name="recGroupShape">
+                            <line color="#ffff00" width="3" alpha="100" />
+                        </shape>
+                    </group>
+                </state>
 
             </statetype>
 
@@ -125,7 +138,6 @@
             <area>25,85,318,300</area>
             <spacing>0</spacing>
             <searchposition>-1,390</searchposition>
-            <triggerevent context="Global" action="ESCAPE">LEFT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active" >
                     <area>0,0,320,30</area>
@@ -165,7 +177,6 @@
             <area>370,85,883,300</area>
             <spacing>0</spacing>
             <searchposition>-1,390</searchposition>
-            <triggerevent context="Global" action="MENU">RIGHT</triggerevent>
             <statetype name="buttonitem">
                 <state name="active">
                 <area>0,0,766,30</area>
