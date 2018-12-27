@@ -66,44 +66,47 @@
     <window name="editor">
 
         <textarea name="title" from="basetextarea">
+            <area>15,5,800,50</area>
             <font>baselarge</font>
-            <area>0,50,1280,50</area>
-            <align>center,vcenter</align>
         </textarea>
 
+        <shape name="topbackground" from="basebackground">
+            <area>25,75,1230,615</area>
+        </shape>
+
         <textarea name="namelabel" from="basetextarea">
-            <area>335,150,100,30</area>
+            <area>235,150,100,30</area>
             <align>right,vcenter</align>
         </textarea>
 
         <textedit name="name" from="basetextedit">
-            <position>450,140</position>
+            <area>350,140,700,50</area>
         </textedit>
 
         <textarea name="urllabel" from="basetextarea">
-            <area>335,250,100,30</area>
+            <area>235,250,100,30</area>
             <align>right,vcenter</align>
         </textarea>
 
-        <textedit name="url" from="basetextedit">
-            <position>450,240</position>
+        <textedit name="url" from="name">
+            <position>350,240</position>
         </textedit>
 
         <textarea name="iconlabel" from="basetextarea">
-            <area>335,350,100,30</area>
+            <area>235,350,100,30</area>
             <align>right,vcenter</align>
         </textarea>
 
-        <textedit name="icon" from="basetextedit">
-            <position>450,340</position>
+        <textedit name="icon" from="name">
+            <position>350,340</position>
         </textedit>
 
         <checkbox name="podcast_check" from="basecheckbox">
-            <position>450,445</position>
+            <position>350,445</position>
         </checkbox>
 
         <textarea name="podcastlabel" from="basetextarea">
-            <area>285,445,150,30</area>
+            <area>185,445,150,30</area>
             <align>right,vcenter</align>
         </textarea>
 

@@ -329,10 +329,14 @@
     <window name="bookmarkeditor">
 
         <textarea name="title" from="basetextarea">
+            <area>15,5,800,50</area>
             <font>baselarge</font>
-            <area>0,50,1280,50</area>
-            <align>allcenter</align>
+            <value>Edit Bookmark Details</value>
         </textarea>
+
+        <shape name="topbackground" from="basebackground">
+            <area>25,75,1230,615</area>
+        </shape>
 
         <textarea name="categorylabel" from="basetextarea">
             <area>180,150,200,30</area>
@@ -341,11 +345,11 @@
         </textarea>
 
         <textedit name="category" from="basetextedit">
-            <position>395,140</position>
+            <area>390,140,540,50</area>
         </textedit>
 
         <button name="findcategory" from="basebutton">
-            <position>790,145</position>
+            <position>950,140</position>
             <value>Find...</value>
         </button>
 
@@ -355,7 +359,7 @@
             <value>Name:</value>
         </textarea>
 
-        <textedit name="name" from="basetextedit">
+        <textedit name="name" from="category">
             <position>395,240</position>
         </textedit>
 
@@ -365,17 +369,27 @@
             <value>URL:</value>
         </textarea>
 
-        <textedit name="url" from="basetextedit">
+        <textedit name="url" from="category">
             <position>395,340</position>
         </textedit>
 
+        <textarea name="homepagelabel" from="basetextarea">
+            <area>180,440,200,30</area>
+            <align>right,vcenter</align>
+            <value>Homepage:</value>
+        </textarea>
+
+        <checkbox name="homepage" from="basecheckbox">
+            <position>395,440</position>
+        </checkbox>
+
         <button name="cancel" from="basebutton">
-            <position>395,480</position>
+            <position>395,510</position>
             <value>Cancel</value>
         </button>
 
         <button name="ok" from="basebutton">
-            <position>620,480</position>
+            <position>620,510</position>
             <value>OK</value>
         </button>
 
