@@ -106,3 +106,5 @@ Updates:
   - Make the watch recordings screen consistent with upstream MythCenter-wide
   - Add animated header image to the popup menu
   - Replace one of the background images
+* 01/12/20 - 1.10
+  - update the web browser and news feed edit metadata screens
