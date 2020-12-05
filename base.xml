@@ -59,6 +59,10 @@
         <shadowalpha>200</shadowalpha>
     </fontdef>
 
+    <fontdef name="small_info" from="basesmaller">
+        <color>#f0f0f0</color>
+    </fontdef>
+
     <!-- State variations on small font -->
     <fontdef name="basesmall_normal_selected" from="basesmallbold">
         <color>#ffffff</color>

@@ -197,11 +197,6 @@
                             <filename>schedule_other.png</filename>
                         </imagetype>
                     </state>
-<!--                <state name="normal">
-                        <imagetype name="statusimage">
-                            <filename>schedule_record.png</filename>
-                        </imagetype>
-                    </state> -->
                     <state name="running">
                         <imagetype name="statusimage">
                             <filename>schedule_recording.png</filename>
@@ -210,16 +205,21 @@
                     <state name="marked"></state>
                 </statetype>
                     <textarea name="titlesubtitle" from="buttontext">
-                        <area>32,2,636,28</area>
+                        <area>32,2,547,28</area>
                         <align>vcenter</align>
                     </textarea>
-                    <textarea name="shortstartdate" from="titlesubtitle">
-                        <area>614,2,120,28</area>
+                    <textarea name="s00e00">
+                        <area>584,2,120,28</area>
+                        <align>right, vcenter</align>
+                    </textarea>
+                    <textarea name="syndicatedepisode" from="s00e00" depends="!s00e00"/>
+                    <textarea name="year" from="s00e00" depends="!s00e00&amp;!syndicatedepisode"/>
+                    <textarea name="shortstartdate">
+                        <area>709,2,70,28</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="starttime" from="shortstartdate">
-                        <area>740,2,114,28</area>
-                        <align>right,vcenter</align>
+                        <area>784,2,70,28</area>
                     </textarea>
                     <statetype name="watched">
                         <position>8,7</position>
@@ -250,7 +250,7 @@
                         <area>0,0,865,30</area>
                     </shape>
                     <textarea name="titlesubtitle" from="buttontext">
-                        <area>32,2,636,28</area>
+                        <area>32,2,547,28</area>
                         <font>basesmall_normal_selected</font>
                         <font state="disabled">basesmall_disabled_selected</font>
                         <font state="error">basesmall_error_selected</font>
@@ -259,13 +259,19 @@
                         <font state="running">basesmall_running_selected</font>
                         <align>vcenter</align>
                     </textarea>
-                    <textarea name="shortstartdate" from="titlesubtitle">
-                        <area>614,2,120,28</area>
+                    <textarea name="s00e00">
+                        <area>584,2,120,28</area>
+                        <align>right, vcenter</align>
+                    </textarea>
+                    <textarea name="syndicatedepisode" from="s00e00" depends="!s00e00"/>
+                    <textarea name="year" from="s00e00" depends="!s00e00&amp;!syndicatedepisode"/>
+
+                    <textarea name="shortstartdate">
+                        <area>709,2,70,28</area>
                         <align>right,vcenter</align>
                     </textarea>
                     <textarea name="starttime" from="shortstartdate">
-                        <area>740,2,114,28</area>
-                        <align>right,vcenter</align>
+                        <area>784,2,70,28</area>
                     </textarea>
                 </state>
             </statetype>
@@ -361,11 +367,6 @@
             </state>
         </statetype>
 
-<!--        <imagetype name="watched">
-            <filename>watched.png</filename>
-            <position>716,500</position>
-        </imagetype>-->
-
         <imagetype name="processing">
             <filename>processing.png</filename>
             <position>1230,660</position>
@@ -385,7 +386,7 @@
         <textarea name="timedate" from="baselabel">
             <area>295,444,415,30</area>
             <align>hcenter</align>
-            <template>%startdate%%| startyear%, %starttime% </template>
+            <template>%startdate%, %starttime% </template>
         </textarea>
 
         <textarea name="filesize_str" from="baselabel">
@@ -394,11 +395,35 @@
         </textarea>
 
         <textarea name="description" from="basetextarea">
-            <area>30,480,885,210</area>
+            <area>30,480,885,190</area>
             <multiline>yes</multiline>
-            <scroll direction="vertical" />
-            <cutdown>no</cutdown>
+            <cutdown>yes</cutdown>
             <template>%"|SUBTITLE|" %%(|STARS|) %%DESCRIPTION%</template>
+        </textarea>
+
+        <textarea name="category" from="baselabel">
+            <area>30,665,310,30</area>
+            <font>small_info</font>
+            <align>left, vcenter</align>
+            <template>CATEGORY</template>
+        </textarea>
+
+        <textarea name="seasonepisode" from="category">
+            <area>348,665,250,30</area>
+            <align>center, vcenter</align>
+            <template>%Season: |SEASON%% Episode: |EPISODE%</template>
+        </textarea>
+
+        <textarea name="year" from="category" depends="!seasonepisode">
+            <area>348,665,250,30</area>
+            <align>center, vcenter</align>
+            <template>%Year: |YEAR%</template>
+        </textarea>
+
+        <textarea name="originalairdate" from="category">
+            <area>615,665,300,30</area>
+            <align>right, vcenter</align>
+            <template>%First Aired: |ORIGINALAIRDATE%</template>
         </textarea>
 
         <imagetype name="preview" depends="!coverart">
