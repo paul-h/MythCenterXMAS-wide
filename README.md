@@ -111,3 +111,5 @@ Updates:
 * 05/12/20 - 1.11
   - add season, episode, year, category and first aired to the watch recordings screen
   - add 6 new backround images
+* 17/12/20 - 1.12
+  - add 5 new background images
