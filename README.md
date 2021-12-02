@@ -113,3 +113,7 @@ Updates:
   - add 6 new backround images
 * 17/12/20 - 1.12
   - add 5 new background images
+* 29/11/21 - 1.13
+  - add support for the new sports autoextend feature for recordings
+* 02/12/21 - 1.14
+  - add 30 new background images
