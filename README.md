@@ -113,3 +113,5 @@ Updates:
   - add 6 new backround images
 * 17/12/20 - 1.12
   - add 5 new background images
+* 02/12/21 - 1.13
+  - add 30 new background images
