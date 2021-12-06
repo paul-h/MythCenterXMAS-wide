@@ -117,3 +117,6 @@ Updates:
   - add support for the new sports autoextend feature for recordings
 * 02/12/21 - 1.14
   - add 30 new background images
+* 06/12/21 - 1.15
+  - use the new procedural texture support for the snow effect
+  

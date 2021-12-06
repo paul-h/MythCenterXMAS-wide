@@ -1,0 +1,66 @@
+#define cc vec2(0.5,0.5)
+#define smoothness 1.0
+#define SNOW_COL vec4(1.0,1.0,1.0,1.0)
+#define N_LAYERS 6.0
+#define SNOW_ALPHA 1.0
+#define SPEED -0.3
+#define bg vec4(0.8,0.8,0.9,0.0)
+varying highp float v_alpha;
+varying highp float v_time;
+varying highp vec2  v_pos;
+varying highp vec2  v_res;
+highp float smoothCircle(highp vec2 position, highp float relativeSize) {
+    highp float d = distance(cc,position)*2./relativeSize;
+    if (d > 1.0){
+        return 0.0;
+    }
+    else{
+        return clamp(smoothness/d-smoothness,-1.0,1.0);
+    }
+}
+// fake random stolen from https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83
+highp float randF(highp float n){
+    return fract(sin(n) * 43758.5453123);
+}
+// used to determine whether to draw a flake in the grid
+// the magic number is just me mashing the keyboard
+bool rand2d(highp float i, highp float j, highp float probability) {
+        return  (randF(i + j*7.8124861) > probability);
+}
+// create the grid of circles, with a bunch missing, and fanaggle the sizes a bit
+highp float circleGrid(highp vec2 position, highp float spacing, highp float dotSize) {
+    // idx => which dot we are showing in the grid.
+    // check x and y index to see if we should draw it or not.
+    highp float idx = floor(1./spacing * position.x);
+    highp float yIdx = floor(1./spacing * position.y);
+    // much higher than .06 causes the grid to be obvious
+    if (rand2d(idx,yIdx,0.06)) {
+        return 0.0;
+    }
+    // modify the size of the flake a bit
+    highp float relativeSize = (0.5 + 0.5*randF(yIdx))*dotSize / spacing;
+
+    return smoothCircle(vec2(
+        fract(1./spacing*position.x),
+        fract(1./spacing*position.y + yIdx)
+    ),relativeSize);
+}
+
+void main(void) {
+    highp vec2 uv = v_pos / v_res;
+    highp vec2 uvsq = vec2(uv.x* v_res.x/v_res.y, uv.y);
+    highp float amnt = 0.0;
+
+    for (highp float i = 0.0; i < N_LAYERS; i ++){
+        highp float p = 0.5 + ((i+1.) / N_LAYERS)*0.4;
+        // small flakes in bg drawn first with lower speed
+
+        // the only reason we add "i" is so it tweaks the noise called on this position later.
+        highp vec2 fallPosition = vec2((1.0-p) + uvsq.x + i + p*sin(v_time/2000.+i)/4. * SPEED,
+                                 (1.0-p) + i * 3.0 + uvsq.y + v_time/2000.*p/1. * SPEED
+        );
+        amnt = amnt + SNOW_ALPHA * circleGrid(fallPosition, 0.06* p, 0.04* p*p);
+    }
+    gl_FragColor = mix(SNOW_COL,bg,1.0-amnt);
+};
+ 

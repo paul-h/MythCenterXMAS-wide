@@ -1585,17 +1585,17 @@
     </window>
 
     <window name="backgroundwindow">
-       <imagetype name="background">
+        <imagetype name="background">
             <area>0,0,1280,720</area>
             <filename>backgrounds/</filename>
             <delay>60000</delay>
         </imagetype>
 
-        <imagetype name="snow">
-            <area>0,0,1280,720</area>
-            <filename>ui/snow.gif</filename>
-            <delay>200</delay>
-        </imagetype>
+        <procedural name="backimg">
+            <area>0,0,100%,100%</area>
+            <vertexsource>vertex_shader.txt</vertexsource>
+            <fragmentsource>fragment_shader.txt</fragmentsource>
+        </procedural>
 
         <fontdef name="medium" face="Droid Sans">
             <color>#FFFFFF</color>

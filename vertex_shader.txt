@@ -1,0 +1,18 @@
+attribute vec2 a_position;
+varying highp float v_alpha;
+varying highp float v_time;
+varying highp vec2  v_pos;
+varying highp vec2  v_res;
+uniform highp mat4  u_projection;
+uniform highp mat4  u_transform;
+uniform highp float u_time;
+uniform highp float u_alpha;
+uniform highp vec2  u_res;
+void main() {
+    v_pos = a_position;
+    gl_Position = u_projection * u_transform * vec4(a_position, 0.0, 1.0);
+    v_alpha = u_alpha;
+    v_time = u_time;
+    v_res  = u_res;
+}
+ 
